@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Lara Crypt : Royal Advisory Board</title>
+    <link rel='stylesheet' href='lib1/bootstrap.min.css'>
+    <link rel='stylesheet' href='index.css'>
+
+    <script src='lib1/jquery-2.1.4.min.js'></script>
+    <script src='lib1/bootstrap.min.js'></script>
+    <script src="lib1/pako.js"></script>
+    <script src='lib1/vue.min.js'></script>
+    <script src="lib1/Chart.min.js"></script>
+
+    <script src='lib1/savecodec2.js'></script>
+    <script src='lib1/pmprng.js'></script>
+    <script src='lib1/util.js'></script>
+    <script src='lib1/flavor.js'></script>
+    <script src='lib2/flavor.js'></script>
+    <script src='lib2/artifacts.js'></script>
+    <script src='lib2/index.js'></script>
+</head>
+
+<body style="background-color: #98AFC7;">
+
+
+    <div id="navbox">
+        <div class="menu">
+            <ul>
+                <li >
+                    <a href="./home.html" one-link-mark="yes">主页</a>
+                </li>
+                <li >
+                    <a href="./Challenge.html" one-link-mark="yes">挑战</a>
+                </li>          
+                <li >
+                    <a href="./SecrectTrophy.html" one-link-mark="yes">隐藏成就</a>
+                </li>
+                <li >
+                    <a href="./Excavation.html" one-link-mark="yes">考古</a>
+                </li>
+                <li >
+                    <a href="./Research.html" one-link-mark="yes">研究</a>
+                </li>
+                <li >
+                    <a href="ExcavationForcast.html" one-link-mark="yes">考古预测</a>
+                </li>
+                <li >
+                    <a href="./TierViewer.html" one-link-mark="yes">Tier查看器</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <style>
+      .menu ul li a, .menu ul li a:visited, .menu ul li:hover a 
+      {
+          display: block;
+          text-decoration: none;
+          color: #000;
+          width: 102.5px;
+          height: 23px;
+          text-align: center;
+          color: #ffffff;
+          border: 2px solid #ffffff;
+          background: #4c5b86;
+          line-height: 20px;
+          font-size: 14px;
+          overflow: hidden;
+      }
+          li {
+          
+          list-style-type:none;
+          display: inline-block;
+          
+          }
+      
+          
+          .col-md-9
+          {
+              position: relative;
+              min-height: 1px;
+              padding-left: 15px;
+              padding-right: 15px;
+          }
+    
+    
+          ul{
+          display: block;
+          list-style-type: disc;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+          }
+      </style>
+    <div class='container' id='app'>
+        <h2 class='page-header'><span>{{flavor.title}}</span> <small>{{flavor.tagline}}</small></h2>
+        <div class='panel panel-primary'>
+            <div class='panel-heading'>{{flavor.intro}}</div>
+            <div class='panel-body input-group panelSaveInput'>
+                <label id='saveInputLabel' class='input-group-addon' for='saveInput'>Save <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='Export your save from Realm Grinder and paste it in this field to view a variety of stats that are not shown in-game.'>(?)</a></label>
+                <input id='saveInput' class='form-control' type='text' name='saveInput' value=''>
+                <div class='input-group-btn'>
+                    <button id='doReEnter' class='btn btn-success' type='button'>重新计算预测数据</button>
+                    <button id='doSaveCopy' class='btn btn-info' type='button'>复制存档</button>
+                    <button id='doSaveClear' class='btn btn-danger' type='button'>清空存档</button>
+                </div>
+            </div>
+        </div>
+        <ul class='nav nav-pills' role='tablist'>
+            <li class='active' role='presentation'>
+                <a href='#tab-artifact' aria-controls='Artifact Forecast' role='tab' data-toggle='pill'> 考古预测 </a>
+            </li>
+            <li role='presentation'>
+                <a href='#tab-raw' aria-controls='Small Values' role='tab' data-toggle='pill'> Small Values </a>
+            </li>
+        </ul>
+        <div class='tab-content'>
+            <div role='tabpanel' class='tab-pane fade in active' id='tab-artifact'>
+                <div class="alert alert-warning">
+                    Due to some statistics used for artifact chances not being in the savefile, you will have to compare the "could find with" value with your ingame values for some artifacts. Currently this applies to the following: Power Orb, Beard Hair, First Crystal Fragment, First Iron Fragment, Second Iron Fragment, Third Iron Fragment, Excavated Mirage, Ancestral Hourglass, Lantern of Guidance, Vault, Battlefield, Blood Chalice.
+				</div>
+                <div>
+                    <div class='results'>
+                        <div class='resultblock'><span class='result'>Artifact RNG State: </span><span>{{result.state}}</span></div>
+                        <div class='resultblock'><span class='result'>Current Excavations: </span><span>{{result.excavations}}</span></div>
+                        <div class='resultblock'><span class='result'>Eligible Artifacts <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='This is the set of artifacts that will consume a value from the RNG when you excavate. It is possible for some artifacts to be eligible even if you cannot obtain them in your current abdication.'>(?)</a>: </span><span>{{eligible}}</span></div>
+                        <div class='resultblock'><span class='result'>Unobtainable Eligible Artifacts: </span><span>{{unobtain}}</span></div>
+                        <div class='resultblock'><span class='result'>Non-Random Artifacts: </span><span>{{nonrandom}}</span></div>
+                        <br>
+                        <div class='resultblock'><span class='result'>Upcoming Excavations: </span>
+                            <ul>
+                                <li v-for="excav in excavs" , track-by="$index">{{excav}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role='tabpanel' class='tab-pane fade in' id='tab-raw'>
+                <canvas id='chartcontainer' height='100'></canvas>
+                <div hidden class='artifactviewer viewertitle'> <span class='result'>Artifact Requirements</span>
+                    <div class='artifactviewer viewer-results'> </div>
+                    <br>
+                    <input type="checkbox" id="override-box" value="1"> Override Save Reincarnation
+                    <br>
+                    <span hidden id='artifactform'> View Artifacts up to Reincarnation: <input type="text" id="override-reincarnation" value="125"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

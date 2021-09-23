@@ -1,0 +1,1306 @@
+<html>
+<head>
+</head>
+<body style="background-color: #98AFC7;" >
+
+
+
+    <div id="navbox">
+        <div class="menu">
+            <ul>
+                <li >
+                    <a href="./home.html" one-link-mark="yes">主页</a>
+                </li>
+                <li >
+                    <a href="./Challenge.html" one-link-mark="yes">挑战</a>
+                </li>          
+                <li >
+                    <a href="./SecrectTrophy.html" one-link-mark="yes">隐藏成就</a>
+                </li>
+                <li >
+                    <a href="./Excavation.html" one-link-mark="yes">考古</a>
+                </li>
+                <li >
+                    <a href="./Research.html" one-link-mark="yes">研究</a>
+                </li>
+                <li >
+                    <a href="ExcavationForcast.html" one-link-mark="yes">考古预测</a>
+                </li>
+                <li >
+                    <a href="./TierViewer.html" one-link-mark="yes">Tier查看器</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <style>
+      .menu ul li a, .menu ul li a:visited, .menu ul li:hover a 
+      {
+          display: block;
+          text-decoration: none;
+          color: #000;
+          width: 102.5px;
+          height: 23px;
+          text-align: center;
+          color: #ffffff;
+          border: 2px solid #ffffff;
+          background: #4c5b86;
+          line-height: 20px;
+          font-size: 14px;
+          overflow: hidden;
+      }
+          li {
+          
+          list-style-type:none;
+          display: inline-block;
+          
+          }
+      
+          
+          .col-md-9
+          {
+              position: relative;
+              min-height: 1px;
+              padding-left: 15px;
+              padding-right: 15px;
+          }
+    
+    
+          ul{
+          display: block;
+          list-style-type: disc;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+          }
+      </style>
+    <div class = "blank" style="height: 59px ;position:relative;"> </div>
+    <div class = "blank" style="height: 1500px ;position:absolute;"> 
+    a
+    </div>
+    <div id="page_x" style="display:none"></div>
+    <div id="page_y" style="display:none"></div>
+    <div class = "container" >
+        <div class="photo"><img src="./imgages/SecretTrophiesMap.png" usemap="#SecretTrophies-map"></div>
+  
+        <div class="note">
+            <h2>提示</h2>
+            <p> 部分加成具体公式暂时不会列出，建议去Notawiki上查询：
+                <a href="http://musicfamily.org/realm/TrophyPage/" target="_blank" >http://musicfamily.org/realm/TrophyPage/</a>
+            </p>
+            <p>
+                翻译参考：RG综合列表
+            </p>
+        </div> 
+    
+    
+        <!-- <div class="info" id="" style="display:none">
+            <h2>名称</h2>
+            <p> </p>
+
+            <h2>目标</h2>
+            <p> </p>
+
+            <h2>加成</h2>   
+            <p> </p>
+        </div>  -->
+
+
+
+        <div class="info" id="Leet"  style="display:none" >
+            <h2>名称</h2>
+            <p>leet
+                黑客语</p>
+
+            <h2>目标</h2>
+            <p>持有1337个钱币（不多不少）</p>
+
+            <h2>加成</h2>   
+            <p>所有建筑产能提升13.37%（不受Ascension产能惩罚）</p>
+        </div> 
+
+        <div class="info" id="Unitary" style="display:none">
+            <h2>名称</h2>
+            <p>unitary
+                中央集权</p>
+
+            <h2>目标</h2>
+            <p>本局所有建筑各1个（不多不少）</p>
+
+            <h2>加成</h2>   
+            <p>所有建筑产能提升11.11111111%（不受Ascension产能惩罚)</p>
+        </div> 
+        
+        <div class="info" id="Building_Hater" style="display:none">
+            <h2>名称</h2>
+            <p>building hater
+                仇视建筑者</p>
+
+            <h2>目标</h2>
+            <p> 不买任何建筑，获得100000个钱币</p>
+
+            <h2>加成</h2>   
+            <p> 点击收益提升固定比例25%</p>
+        </div> 
+
+        <div class="info" id="Perfectly_Good" style="display:none">
+            <h2>名称</h2>
+            <p> perfectly good
+                完美的施善者
+                </p>
+
+            <h2>目标</h2>
+            <p>所有R合计善良阵营使用时间达到333小时（13天21小时）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 善良阵营建筑产能提升固定比例50%
+            </p>
+        </div> 
+
+        <div class="info" id="Lucky_Neutral" style="display:none">
+            <h2>名称</h2>
+            <p> lucky neutral
+                幸运的中立者</p>
+
+            <h2>目标</h2>
+            <p> 所有R合计中立阵营使用时间达到7777分钟（5天9小时37分钟）</p>
+
+            <h2>加成</h2>   
+            <p> 中立阵营建筑产能提升固定比例50%  </p>
+        </div> 
+
+        <div class="info" id="Grand_Diplomat" style="display:none">
+            <h2>名称</h2>
+            <p> grand diplomat
+                首席外交官</p>
+
+            <h2>目标</h2>
+            <p> 用善良邪恶中立9个基础种族各开局至少1次</p>
+
+            <h2>加成</h2>   
+            <p> fc获得率增加2%</p>
+        </div> 
+
+        <div class="info" id="Exchange_Master" style="display:none">
+            <h2>名称</h2>
+            <p> exchange master
+                贸易大师</p>
+
+            <h2>目标</h2>
+            <p> 本局拥有500个RE</p>
+
+            <h2>加成</h2>   
+            <p> RE基础产能加成增加5%</p>
+        </div> 
+
+        <div class="info" id="Diabolical_Evil" style="display:none">
+            <h2>名称</h2>
+            <p> Diabolical_Evil
+                狠毒的行恶者</p>
+
+            <h2>目标</h2>
+            <p> 所有R使用邪恶阵营6天、66小时、666分钟、666666秒（16天22小时17分6秒）</p>
+
+            <h2>加成</h2>   
+            <p> 邪恶阵营建筑产能提升固定比例100%
+            </p>
+        </div> 
+
+        <div class="info" id="Assistant_Squasher" style="display:none">
+            <h2>名称</h2>
+            <p> "Assistant_Squasher
+                助手压榨机"
+                </p>
+
+            <h2>目标</h2>
+            <p> 点击100次游戏界面里建筑间的助手
+            </p>
+
+            <h2>加成</h2>   
+            <p> 提供1个助手
+            </p>
+        </div> 
+
+        <div class="info" id="Rewind" style="display:none">
+            <h2>名称</h2>
+            <p> "rewind
+                回转"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本局钱币数量达到1e27后退职（abdication）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 所有建筑产能提升固定比例8%
+            </p>
+        </div> 
+
+        <div class="info" id="Faction_Grinder" style="display:none">
+            <h2>名称</h2>
+            <p> "faction grinder
+                种族粉碎机"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本局游戏买下善良邪恶6种族所有遗产
+            </p>
+
+            <h2>加成</h2>   
+            <p> fc获得率增加2%
+            </p>
+        </div> 
+
+        <div class="info" id="Master_Archeologist" style="display:none">
+            <h2>名称</h2>
+            <p> "master archeologist
+                考古学家"
+                </p>
+
+            <h2>目标</h2>
+            <p>挖到所有（6个/3对）用于解锁中立阵营3种族的quest遗物
+            </p>
+
+            <h2>加成</h2>   
+            <p> 使用中立阵营时所有建筑产能提升固定比例25%
+            </p>
+        </div> 
+
+        <div class="info" id="Spellfury" style="display:none">
+            <h2>名称</h2>
+            <p> "spellfury
+                法术狂热"
+                </p>
+
+            <h2>目标</h2>
+            <p> 在至少3个法术同时活跃时施放TC
+            </p>
+
+            <h2>加成</h2>   
+            <p> 回魔+5%
+            </p>
+        </div> 
+
+        <div class="info" id="Speedrun" style="display:none">
+            <h2>名称</h2>
+            <p> "speed run
+                冲刺跑"
+                </p>
+
+            <h2>目标</h2>
+            <p> 开局5分钟内不用gem power，获得1e6钱币
+            </p>
+
+            <h2>加成</h2>   
+            <p> 基础点击产能+1e6
+            </p>
+        </div> 
+
+        <div class="info" id="Equality" style="display:none">
+            <h2>名称</h2>
+            <p> "Equality
+                平等"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R时间不少于3天，善良邪恶中立3阵营使用时间相差不超过1分钟
+            </p>
+
+            <h2>加成</h2>   
+            <p> 所有建筑产能提升固定比例100%
+            </p>
+        </div> 
+
+        <div class="info" id="Beard_Carpet" style="display:none">
+            <h2>名称</h2>
+            <p> "Beard Carpet
+                胡须编织的地毯"
+                </p>
+
+            <h2>目标</h2>
+            <p> 让矮人助手胡子长度达到1km（与DN6相关，1天3小时47分钟）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 助手产能提升固定比例10%
+            </p>
+        </div> 
+
+        <div class="info" id="Premeditation" style="display:none">
+            <h2>名称</h2>
+            <p> "Premeditation
+                预谋"
+                </p>
+
+            <h2>目标</h2>
+            <p> 使用哥布林/不死族/恶魔，不使用卓尔，拥有至少850个Dark Temple
+
+            </p>
+
+            <h2>加成</h2>   
+            <p> 魔上限+250
+            </p>
+        </div> 
+
+        <div class="info" id="Fast_Forward" style="display:none">
+            <h2>名称</h2>
+            <p> "Fast Forward
+                快进"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R离线时间达到88小时（3天16小时）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 离线产能加成提升固定比例200%
+            </p>
+        </div> 
+
+        <div class="info" id="Need_A_Head_Start" style="display:none">
+            <h2>名称</h2>
+            <p> "Need A Head Start？
+                需要领先一步吗？"
+                </p>
+
+            <h2>目标</h2>
+            <p>开局5分钟内不做任何事（不买东西、不点地板……）
+            </p>
+
+            <h2>加成</h2>   
+            <p>提供10个钱币
+            </p>
+        </div> 
+
+        <div class="info" id="Harlequin" style="display:none">
+            <h2>名称</h2>
+            <p> "Harlequin
+                小丑"
+                </p>
+
+            <h2>目标</h2>
+            <p>使用佣兵时获得11个来自不同种族的种族升级
+            </p>
+
+            <h2>加成</h2>   
+            <p>使用佣兵时根据拥有种族升级所属种族种类数提升所有建筑产能
+            </p>
+        </div> 
+
+        <div class="info" id="Realm_Digger" style="display:none">
+            <h2>名称</h2>
+            <p> "Realm Digger
+                宝箱挖掘者"
+                </p>
+
+            <h2>目标</h2>
+            <p> 考古400次
+            </p>
+
+            <h2>加成</h2>   
+            <p>根据当前考古次数（不包括考古重置部分）提升所有建筑产能（线性，每次考古提升固定比例0.15%）
+            </p>
+        </div> 
+
+        <div class="info" id="Lucifer" style="display:none">
+            <h2>名称</h2>
+            <p>"Lucifer
+                堕天使"
+                 </p>
+
+            <h2>目标</h2>
+            <p> 使用善良（邪恶）佣兵时选用所有种族升级全部来自邪恶（善良）阵营
+            </p>
+
+            <h2>加成</h2>   
+            <p> 所有非中立阵营建筑产能提升固定比例300%
+            </p>
+        </div> 
+
+        <div class="info" id="Mathematician" style="display:none">
+            <h2>名称</h2>
+            <p> "Mathematician
+                数学家"
+                </p>
+
+            <h2>目标</h2>
+            <p> 开局后从hall of legend到farm所有建筑数量按照1、2、4、8、16、32、64、128、256、512、1024的顺序排列
+            </p>
+
+            <h2>加成</h2>   
+            <p> 各建筑根据各自建筑层级提升各自产能
+            </p>
+        </div> 
+
+        <div class="info" id="Mercenary_Spirit" style="display:none">
+            <h2>名称</h2>
+            <p> "Mercenary Spirit
+                佣兵之魂"
+                </p>
+
+            <h2>目标</h2>
+            <p> 使用佣兵时R
+            </p>
+
+            <h2>加成</h2>   
+            <p> 使用佣兵时根据R次数提升所有建筑产能（线性，每个R次数提升固定比例15%）
+            </p>
+        </div> 
+
+        <div class="info" id="Bloodstream" style="display:none">
+            <h2>名称</h2>
+            <p> "Bloodstream
+                血流"
+                </p>
+
+            <h2>目标</h2>
+            <p>所有R合计各种族购买100次种族相关升级（种族升级、种族遗产、法术成就）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据本局使用血统对应种族在所有R中累计使用时间提升所有建筑产能；若使用佣兵，根据当前使用血统对应种族相关升级个数将部分佣兵使用时间转化为血统对应种族使用时间
+            </p>
+        </div> 
+
+        <div class="info" id="Unlimited_Mana" style="display:none">
+            <h2>名称</h2>
+            <p>"Unlimited Mana
+                无尽的魔法"
+                 </p>
+
+            <h2>目标</h2>
+            <p> 本局回魔达到至少300/秒
+            </p>
+
+            <h2>加成</h2>   
+            <p> 回魔+2
+            </p>
+        </div> 
+
+        <div class="info" id="For_Science" style="display:none">
+            <h2>名称</h2>
+            <p> "For Science！
+                为了科学！"
+                </p>
+
+            <h2>目标</h2>
+            <p> 解锁所有（6个）研究分支
+            </p>
+
+            <h2>加成</h2>   
+            <p> 使用研究时所有建筑产能提升固定比例100%
+            </p>
+        </div> 
+
+        <div class="info" id="Exchange_Lord" style="display:none">
+            <h2>名称</h2>
+            <p>"Exchange Lord
+                贸易大鳄"
+                 </p>
+
+            <h2>目标</h2>
+            <p>本局拥有1500个RE
+            </p>
+
+            <h2>加成</h2>   
+            <p>RE基础产能加成增加5%
+            </p>
+        </div> 
+
+
+
+        <div class="info" id="Magician" style="display:none">
+            <h2>名称</h2>
+            <p> "Magician
+                魔术师"
+                </p>
+
+            <h2>目标</h2>
+            <p> 在spellcraft（S分支）获得至少10个研究
+            </p>
+
+            <h2>加成</h2>   
+            <p> "S分支增加一个研究槽位
+                PS：该升级为一次性，只需购买一次，永久有效"
+                </p>
+        </div> 
+
+        <div class="info" id="Artisan" style="display:none">
+            <h2>名称</h2>
+            <p>"Artisan
+                工匠"
+                 </p>
+
+            <h2>目标</h2>
+            <p> 在craftsmanship（C分支）获得至少10个研究
+            </p>
+
+            <h2>加成</h2>   
+            <p> "C分支增加一个研究槽位
+                PS：该升级为一次性，只需购买一次，永久有效"
+                </p>
+        </div> 
+
+        <div class="info" id="Demigod" style="display:none">
+            <h2>名称</h2>
+            <p>"Demigod
+                半神"
+                 </p>
+
+            <h2>目标</h2>
+            <p>在divine（D分支）获得至少10个研究
+            </p>
+
+            <h2>加成</h2>   
+            <p> "D分支增加一个研究槽位
+                PS：该升级为一次性，只需购买一次，永久有效"
+                </p>
+        </div> 
+
+        <div class="info" id="Businessman" style="display:none">
+            <h2>名称</h2>
+            <p> "Businessman
+                商业家"
+                </p>
+
+            <h2>目标</h2>
+            <p>在economics（E分支）获得至少10个研究
+            </p>
+
+            <h2>加成</h2>   
+            <p> "E分支增加一个研究槽位
+                PS：该升级为一次性，只需购买一次，永久有效"
+                </p>
+        </div>       
+
+        <div class="info" id="Apothecary" style="display:none">
+            <h2>名称</h2>
+            <p>"Apothecary
+                药剂师"
+                 </p>
+
+            <h2>目标</h2>
+            <p> 在alchemy（A分支）获得至少10个研究
+            </p>
+
+            <h2>加成</h2>   
+            <p> "A分支增加一个研究槽位
+                PS：该升级为一次性，只需购买一次，永久有效"
+                </p>
+        </div> 
+
+        <div class="info" id="Warlord" style="display:none">
+            <h2>名称</h2>
+            <p> "Warlord
+                军阀"
+                </p>
+
+            <h2>目标</h2>
+            <p> 在warfare（W分支）获得至少10个研究
+            </p>
+
+            <h2>加成</h2>   
+            <p> "W分支增加一个研究槽位
+                PS：该升级为一次性，只需购买一次，永久有效"
+                </p>
+        </div> 
+
+        <div class="info" id="Faction_Run" style="display:none">
+            <h2>名称</h2>
+            <p> "Faction Run
+                种族运营"
+                </p>
+
+            <h2>目标</h2>
+            <p> 开局5分钟内不用gem power、考古、法术，获得1.5e6个fc
+            </p>
+
+            <h2>加成</h2>   
+            <p> fc获得率增加10%
+            </p>
+        </div> 
+
+        <div class="info" id="No_Recruiting" style="display:none">
+            <h2>名称</h2>
+            <p> "No Recruiting
+                拒绝招募"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R内不用一次佣兵，拿到1e90个gem
+            </p>
+
+            <h2>加成</h2>   
+            <p>使用佣兵时根据R次数增加所有建筑产能（1%每R）
+            </p>
+        </div> 
+        
+        <div class="info" id="That_Excavated_Quickly" style="display:none">
+            <h2>名称</h2>
+            <p> "That Excavated Quickly
+                神速挖掘"
+                </p>
+
+            <h2>目标</h2>
+            <p> 开局30秒内考古1000次
+            </p>
+
+            <h2>加成</h2>   
+            <p> 考古时fc获得率增加5%
+            </p>
+        </div> 
+
+        <div class="info" id="Glho_Kohhl_Snod" style="display:none">
+            <h2>名称</h2>
+            <p> "Glho Kohhl Snod
+                （拉莱耶语，语意未知）"
+                </p>
+
+            <h2>目标</h2>
+            <p> 在存档加载框里输入“glho kohhl snod”并加载
+            </p>
+
+            <h2>加成</h2>   
+            <p> 点击收益提升50%
+            </p>
+        </div> 
+
+        <div class="info" id="Mana_Matrix" style="display:none">
+            <h2>名称</h2>
+            <p> "Mana Matrix
+                魔法矩阵"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本局魔上限刚刚好达到4767（不多不少）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 魔上限提升15%
+            </p>
+        </div> 
+
+        <div class="info" id="Suggestion_Master" style="display:none">
+            <h2>名称</h2>
+            <p> Suggestion Master
+                谏言大师</p>
+
+            <h2>目标</h2>
+            <p> 在版本更新页面停留3分钟
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据当前游戏版本号提升所有建筑产能
+            </p>
+        </div> 
+
+        <div class="info" id="Rule_Dis" style="display:none">
+            <h2>名称</h2>
+            <p> "Rule'Dis
+                支配它"
+                </p>
+
+            <h2>目标</h2>
+            <p> 3分钟内重新开局（abdication）10次
+
+            </p>
+
+            <h2>加成</h2>   
+            <p> 回魔+1/秒
+            </p>
+        </div> 
+
+        <div class="info" id="Because_I_Like_To_Grind" style="display:none">
+            <h2>名称</h2>
+            <p> Because I Like To Grind
+                因为我热爱压迫</p>
+
+            <h2>目标</h2>
+            <p> 本局时间达到3小时
+            </p>
+
+            <h2>加成</h2>   
+            <p> RE基础产能加成增加1%
+            </p>
+        </div> 
+
+        <div class="info" id="Triple_Weirdness" style="display:none">
+            <h2>名称</h2>
+            <p>"Triple Weirdness
+                三重异象"
+                </p>
+
+            <h2>目标</h2>
+            <p> 各种族RE数量达到333个
+                <p class="attention">
+                    (R40+才能做，提前做了也没法解锁)
+                </p>
+
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据离线回魔提升离线fc获得量
+            </p>
+        </div> 
+        
+        <div class="info" id="Stoic_Resistance" style="display:none">
+            <h2>名称</h2>
+            <p> "Stoic Resistance
+                苦修"
+                </p>
+
+            <h2>目标</h2>
+            <p> <br>"R后首局得到与本Ascension首次R所需gem数量相同的gem<br />
+                <br>注：A0（R0-39）为1e27<br />
+                <br>A1（R40-99）为1.778e20<br />
+                <br>A2（R100-159）为2.5e15<br />
+                <br>A3（R160-219）为2.5e11<br />
+                <br>A4（R220-未知）为1e27"<br />
+                </p>
+
+            <h2>加成</h2>   
+            <p> 基础点击产能+1e12
+            </p>
+        </div> 
+
+        <div class="info" id="Vanishment" style="display:none">
+            <h2>名称</h2>
+            <p> "Van！Shment
+                （口袋妖怪的梗，Vanishment意为消失）"
+                </p>
+
+            <h2>目标</h2>
+            <p> 离线加成达到固定比例（A0为1e15%，A1为1895%）
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据离线产能加成提升所有建筑产能
+            </p>
+        </div> 
+
+        <div class="info" id="Iron_Rush" style="display:none">
+            <h2>名称</h2>
+            <p> "Iron Rush
+                强行冲刺"
+                </p>
+
+            <h2>目标</h2>
+            <p> 开局5分钟内不用gem power和R power拥有725个iron stronghold
+            </p>
+
+            <h2>加成</h2>   
+            <p> iron stronghold数量结算值+5%
+            </p>
+        </div> 
+
+        <div class="info" id="Colorful_Autocasting" style="display:none">
+            <h2>名称</h2>
+            <p> "Colorful Autocasting
+                多彩的自动施法"
+                </p>
+
+            <h2>目标</h2>
+            <p> 同时激活所有类型的自动施法（金、银、铜、钻石）
+                <p class="attention">
+                    (R42+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 回魔+10%
+            </p>
+        </div> 
+
+        <div class="info" id="Spell_Cataclysm" style="display:none">
+            <h2>名称</h2>
+            <p> "Spell Cataclysm
+                法术灾难"
+                </p>
+
+            <h2>目标</h2>
+            <p> 同时施放至少4个法术层级至少5级的法术
+                <p class="attention">
+                    (R42+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 魔上限+25%
+            </p>
+        </div> 
+
+        <div class="info" id="Advisor_Insight" style="display:none">
+            <h2>名称</h2>
+            <p> "Advisor Insight
+                顾问的见解"
+                </p>
+
+            <h2>目标</h2>
+            <p> 点开100次游戏数据记录界面
+            </p>
+
+            <h2>加成</h2>   
+            <p> 所有建筑产能提升固定比例10%
+            </p>
+        </div> 
+
+
+        <div class="info" id="Dragon_Tamer" style="display:none">
+            <h2>名称</h2>
+            <p> "Dragon Tamer
+                驯龙高手"
+                </p>
+
+            <h2>目标</h2>
+            <p> 完全解锁龙族
+                <p class="attention">
+                    (R46+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 所有建筑产能提升固定值200%，fc获得率*3
+            </p>
+        </div> 
+
+        <div class="info" id="Helden_Sterben_Nicht" style="display:none">
+            <h2>名称</h2>
+            <p> "Helden Sterben Nicht
+                英雄永生"
+                </p>
+
+            <h2>目标</h2>
+            <p>在15分钟内按佣兵-不死族-天使的顺序开局
+            </p>
+
+            <h2>加成</h2>   
+            <p>魔上限和回魔均+10%
+            </p>
+        </div> 
+
+        <div class="info" id="Mana_Waste" style="display:none">
+            <h2>名称</h2>
+            <p> "Mana Waste
+                魔法浪费"
+                </p>
+
+            <h2>目标</h2>
+            <p> 让回魔超过魔上限
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据本局施法次数增加魔上限
+            </p>
+        </div> 
+
+        <div class="info" id="Prismatic_Mana" style="display:none">
+            <h2>名称</h2>
+            <p> "Prismatic Mana
+                棱镜魔法"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R善良、邪恶、中立9种族的9个种族法术各自施放次数相同且均不少于100次
+                <p class="attention">
+                    (R40+才能做，提前做了也没法解锁)
+                </p> 
+                <br>PS：建议获得施法打断再做</br>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 回魔+25%
+            </p>
+        </div> 
+
+        <div class="info" id="Autoclicker" style="display:none">
+            <h2>名称</h2>
+            <p> "Autoclicker
+                自动点击者"
+                </p>
+
+            <h2>目标</h2>
+            <p> 自动点击次数达到40次/秒(R60+)
+            </p>
+
+            <h2>加成</h2>   
+            <p> 自动点击fc获得率*5
+            </p>
+        </div> 
+
+        <div class="info" id="Exchange_High_Lord" style="display:none">
+            <h2>名称</h2>
+            <p> "Exchange High Lord
+                贸易大公"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本局拥有5000个RE
+                <p class="attention">
+                    (R40+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> RE基础产能加成增加250%
+            </p>
+        </div> 
+
+        <div class="info" id="Genealogist" style="display:none">
+            <h2>名称</h2>
+            <p> "Genealogist
+                系谱学家"
+                </p>
+
+            <h2>目标</h2>
+            <p> 所有Lineage等级总和达到300
+                <p class="attention">
+                    (R40+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据所有种族lineage等级总和提升所有建筑产能
+            </p>
+        </div> 
+
+        <div class="info" id="Holy_Frenzy" style="display:none">
+            <h2>名称</h2>
+            <p> "Holy Frenzy
+                神圣狂热"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R内Holy Light和Blood Frenzy活跃时间总和达到3天
+                
+                <p class="attention">
+                    (A2+才能做，提前做了也没法解锁)
+                </p></p>
+
+            <h2>加成</h2>   
+            <p> "Holy Light/Blood Frenzy活跃时根据Holy Light/Blood Frenzy法术层级数提升所有建筑产能
+                （A4阶段追加效果：使用善良/邪恶阵营时fc获得率*5）"
+                </p>
+        </div> 
+
+        <div class="info" id="Uniformity" style="display:none">
+            <h2>名称</h2>
+            <p> "Uniformity
+                团结一致"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R时长不少于3天，秩序、混乱、平衡3阵营使用时间相差不超过1分钟
+                <p class="attention">
+                    (A2+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据本R所有阵营（善良、邪恶、中立、秩序、混乱、平衡）使用时间最小值提升所有建筑产能
+            </p>
+        </div> 
+
+        <div class="info" id="Art_Of_The_Crow" style="display:none">
+            <h2>名称</h2>
+            <p> "Art Of The Crow
+                墨翎之艺"
+                </p>
+
+            <h2>目标</h2>
+            <p> 解锁6个种族Artifact set(R100+)
+            </p>
+
+            <h2>加成</h2>   
+            <p> "根据阵营选择给予加成，善良、邪恶、中立阵营决定加成自变量，秩序、混乱、平衡阵营决定加成方向
+                <br>善良：本R考古次数（不包括考古重置部分）</br>
+                <br>邪恶：gem产能加成</br>
+                <br>中立：RE数量</br>
+                <br>秩序：提升魔上限</br>
+                <br>混乱：提升助手数量</br>
+                <br>平衡：提升回魔</br>
+                <br>PS：仅当前所用种族和set对应种族属于同一阵营（善良、邪恶、中立）时该升级可用"
+            </br></p>
+        </div> 
+
+        <div class="info" id="Faction_Ruler" style="display:none">
+            <h2>名称</h2>
+            <p> "Faction Ruler
+                种族支配者"
+                </p>
+
+            <h2>目标</h2>
+            <p> 解锁所有高级遗产(R100+)
+            </p>
+
+            <h2>加成</h2>   
+            <p> 与当前使用所有种族（基础-声望）对应高级遗产效果*2
+            </p>
+        </div> 
+
+        <div class="info" id="Mad_Mask" style="display:none">
+            <h2>名称</h2>
+            <p> "Mad Mask
+                精英面具"
+                </p>
+
+            <h2>目标</h2>
+            <p> 获得解锁精英阵营3种族的所有遗物（9个/3组）(R100+)
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据本R单次考古重置内最高考古次数提升所有建筑产能
+            </p>
+        </div> 
+
+        <div class="info" id="Future_Linkin" style="display:none">
+            <h2>名称</h2>
+            <p> "Future Linkin
+                链接未来"
+                </p>
+
+            <h2>目标</h2>
+            <p> 拥有1000000个UB时重新开局（abdication）(R100+)
+            </p>
+
+            <h2>加成</h2>   
+            <p> 根据上局游戏时间提升当前fc获得率
+            </p>
+        </div> 
+
+        <div class="info" id="GodS_Finger" style="display:none">
+            <h2>名称</h2>
+            <p> "God'S Finger
+                神之指"
+                </p>
+
+            <h2>目标</h2>
+            <p> 本R自动点击1e8次
+                <p class="attention">
+                    (R160+才能做，提前做了也没法解锁)
+                </p>
+            </p>
+
+            <h2>加成</h2>   
+            <p> 点击次数结算值*2，赋予5次/秒的自动点击
+            </p>
+        </div> 
+
+        <div class="info" id="True_Harlequin" style="display:none">
+            <h2>名称</h2>
+            <p> "True Harlequin
+                真·小丑"
+                </p>
+
+            <h2>目标</h2>
+            <p> 使用佣兵时获得15个来自不同种族的种族升级
+            </p>
+
+            <h2>加成</h2>   
+            <p>使用拥有15个来自不同种族的种族升级的佣兵时所有建筑产能提升固定比例
+            </p>
+        </div> 
+    </div>
+
+
+    <map name="SecretTrophies-map">
+        <!-- <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/> -->
+        <area shape="rect" coords="3,43,57,97"   onmouseover='inform_show(this,"Leet")' onmouseout='inform_hide(this,"Leet")' />
+        <area shape="rect" coords="63,43,117,97"   onmouseover='inform_show(this,"Unitary")' onmouseout='inform_hide(this,"Unitary")'/>
+        <area shape="rect" coords="123,43,177,97"   onmouseover='inform_show(this,"Building_Hater")' onmouseout='inform_hide(this,"Building_Hater")'/>
+        <area shape="rect" coords="183,43,237,97"    onmouseover='inform_show(this,"Grand_Diplomat")' onmouseout='inform_hide(this,"Grand_Diplomat")'/>
+        <area shape="rect" coords="243,43,297,97"    onmouseover='inform_show(this,"Exchange_Master")' onmouseout='inform_hide(this,"Exchange_Master")'/>
+        <area shape="rect" coords="303,43,357,97"    onmouseover='inform_show(this,"Lucky_Neutral")' onmouseout='inform_hide(this,"Lucky_Neutral")'/>
+        <area shape="rect" coords="363,43,417,97"    onmouseover='inform_show(this,"Perfectly_Good")' onmouseout='inform_hide(this,"Perfectly_Good")'/>
+        
+        <area shape="rect" coords="3,103,57,157"    onmouseover='inform_show(this,"Diabolical_Evil")' onmouseout='inform_hide(this,"Diabolical_Evil")'/>
+        <area shape="rect" coords="63,103,117,157"    onmouseover='inform_show(this,"Assistant_Squasher")' onmouseout='inform_hide(this,"Assistant_Squasher")'/>
+        <area shape="rect" coords="123,103,177,157"    onmouseover='inform_show(this,"Rewind")' onmouseout='inform_hide(this,"Rewind")'/>
+        <area shape="rect" coords="183,103,237,157"    onmouseover='inform_show(this,"Faction_Grinder")' onmouseout='inform_hide(this,"Faction_Grinder")'/>
+        <area shape="rect" coords="243,103,297,157"    onmouseover='inform_show(this,"Master_Archeologist")' onmouseout='inform_hide(this,"Master_Archeologist")'/>
+        <area shape="rect" coords="303,103,357,157"    onmouseover='inform_show(this,"Spellfury")' onmouseout='inform_hide(this,"Spellfury")'/>
+        <area shape="rect" coords="363,103,417,157"    onmouseover='inform_show(this,"Speedrun")' onmouseout='inform_hide(this,"Speedrun")'/>
+    
+        <area shape="rect" coords="3,163,57,217"    onmouseover='inform_show(this,"Equality")' onmouseout='inform_hide(this,"Equality")'/>
+        <area shape="rect" coords="63,163,117,217"    onmouseover='inform_show(this,"Beard_Carpet")' onmouseout='inform_hide(this,"Beard_Carpet")'/>
+        <area shape="rect" coords="123,163,177,217"    onmouseover='inform_show(this,"Premeditation")' onmouseout='inform_hide(this,"Premeditation")'/>
+        <area shape="rect" coords="183,163,237,217"    onmouseover='inform_show(this,"Fast_Forward")' onmouseout='inform_hide(this,"Fast_Forward")'/>
+        <area shape="rect" coords="243,163,297,217"    onmouseover='inform_show(this,"Need_A_Head_Start")' onmouseout='inform_hide(this,"Need_A_Head_Start")'/>
+        <area shape="rect" coords="303,163,357,217"    onmouseover='inform_show(this,"Realm_Digger")' onmouseout='inform_hide(this,"Realm_Digger")'/>
+        <area shape="rect" coords="363,163,417,217"    onmouseover='inform_show(this,"Harlequin")' onmouseout='inform_hide(this,"Harlequin")'/>
+        
+        <area shape="rect" coords="3,223,57,277"    onmouseover='inform_show(this,"Lucifer")' onmouseout='inform_hide(this,"Lucifer")'/>
+        <area shape="rect" coords="63,223,117,277"    onmouseover='inform_show(this,"Mathematician")' onmouseout='inform_hide(this,"Mathematician")'/>
+        <area shape="rect" coords="123,223,177,277"    onmouseover='inform_show(this,"Mercenary_Spirit")' onmouseout='inform_hide(this,"Mercenary_Spirit")'/>
+        <area shape="rect" coords="183,223,237,277"    onmouseover='inform_show(this,"Bloodstream")' onmouseout='inform_hide(this,"Bloodstream")'/>
+        <area shape="rect" coords="243,223,297,277"    onmouseover='inform_show(this,"Unlimited_Mana")' onmouseout='inform_hide(this,"Unlimited_Mana")'/>
+        <area shape="rect" coords="303,223,357,277"    onmouseover='inform_show(this,"For_Science")' onmouseout='inform_hide(this,"For_Science")'/>
+        <area shape="rect" coords="363,223,417,277"    onmouseover='inform_show(this,"Exchange_Lord")' onmouseout='inform_hide(this,"Exchange_Lord")'/>
+
+        <area shape="rect" coords="3,283,57,337"    onmouseover='inform_show(this,"Magician")' onmouseout='inform_hide(this,"Magician")'/>
+        <area shape="rect" coords="63,283,117,337"    onmouseover='inform_show(this,"Artisan")' onmouseout='inform_hide(this,"Artisan")'/>
+        <area shape="rect" coords="123,283,177,337"    onmouseover='inform_show(this,"Demigod")' onmouseout='inform_hide(this,"Demigod")'/>
+        <area shape="rect" coords="183,283,237,337"    onmouseover='inform_show(this,"Businessman")' onmouseout='inform_hide(this,"Businessman")'/>
+        <area shape="rect" coords="243,283,297,337"    onmouseover='inform_show(this,"Apothecary")' onmouseout='inform_hide(this,"Apothecary")'/>
+        <area shape="rect" coords="303,283,357,337"    onmouseover='inform_show(this,"Warlord")' onmouseout='inform_hide(this,"Warlord")'/>
+        <area shape="rect" coords="363,283,417,337"    onmouseover='inform_show(this,"Faction_Run")' onmouseout='inform_hide(this,"Faction_Run")'/>
+
+        <area shape="rect" coords="3,343,57,397"    onmouseover='inform_show(this,"No_Recruiting")' onmouseout='inform_hide(this,"No_Recruiting")'/>
+        <area shape="rect" coords="63,343,117,397"    onmouseover='inform_show(this,"That_Excavated_Quickly")' onmouseout='inform_hide(this,"That_Excavated_Quickly")'/>
+        <area shape="rect" coords="123,343,177,397"    onmouseover='inform_show(this,"Glho_Kohhl_Snod")' onmouseout='inform_hide(this,"Glho_Kohhl_Snod")'/>
+        <area shape="rect" coords="183,343,237,397"    onmouseover='inform_show(this,"Mana_Matrix")' onmouseout='inform_hide(this,"Mana_Matrix")'/>
+        <area shape="rect" coords="243,343,297,397"    onmouseover='inform_show(this,"Suggestion_Master")' onmouseout='inform_hide(this,"Suggestion_Master")'/>
+        <area shape="rect" coords="303,343,357,397"    onmouseover='inform_show(this,"Rule_Dis")' onmouseout='inform_hide(this,"Rule_Dis")'/>
+        <area shape="rect" coords="363,343,417,397"    onmouseover='inform_show(this,"Because_I_Like_To_Grind")' onmouseout='inform_hide(this,"Because_I_Like_To_Grind")'/>
+        
+        <area shape="rect" coords="3,403,57,457"    onmouseover='inform_show(this,"Triple_Weirdness")' onmouseout='inform_hide(this,"Triple_Weirdness")'/>
+        <area shape="rect" coords="63,403,117,457"    onmouseover='inform_show(this,"Stoic_Resistance")' onmouseout='inform_hide(this,"Stoic_Resistance")'/>
+        <area shape="rect" coords="123,403,177,457"    onmouseover='inform_show(this,"Vanishment")' onmouseout='inform_hide(this,"Vanishment")'/>
+        <area shape="rect" coords="183,403,237,457"    onmouseover='inform_show(this,"Iron_Rush")' onmouseout='inform_hide(this,"Iron_Rush")'/>
+        <area shape="rect" coords="243,403,297,457"    onmouseover='inform_show(this,"Colorful_Autocasting")' onmouseout='inform_hide(this,"Colorful_Autocasting")'/>
+        <area shape="rect" coords="303,403,357,457"    onmouseover='inform_show(this,"Spell_Cataclysm")' onmouseout='inform_hide(this,"Spell_Cataclysm")'/>
+        <area shape="rect" coords="363,403,417,457"    onmouseover='inform_show(this,"Advisor_Insight")' onmouseout='inform_hide(this,"Advisor_Insight")'/>
+
+        <area shape="rect" coords="3,463,57,517"    onmouseover='inform_show(this,"Dragon_Tamer")' onmouseout='inform_hide(this,"Dragon_Tamer")'/>
+        <area shape="rect" coords="63,463,117,517"    onmouseover='inform_show(this,"Helden_Sterben_Nicht")' onmouseout='inform_hide(this,"Helden_Sterben_Nicht")'/>
+        <area shape="rect" coords="123,463,177,517"    onmouseover='inform_show(this,"Mana_Waste")' onmouseout='inform_hide(this,"Mana_Waste")'/>
+        <area shape="rect" coords="183,463,237,517"    onmouseover='inform_show(this,"Prismatic_Mana")' onmouseout='inform_hide(this,"Prismatic_Mana")'/>
+        <area shape="rect" coords="243,463,297,517"    onmouseover='inform_show(this,"Autoclicker")' onmouseout='inform_hide(this,"Autoclicker")'/>
+        <area shape="rect" coords="303,463,357,517"    onmouseover='inform_show(this,"Exchange_High_Lord")' onmouseout='inform_hide(this,"Exchange_High_Lord")'/>
+        <area shape="rect" coords="363,463,417,517"    onmouseover='inform_show(this,"Genealogist")' onmouseout='inform_hide(this,"Genealogist")'/>
+
+        <area shape="rect" coords="3,523,57,577"    onmouseover='inform_show(this,"Holy_Frenzy")' onmouseout='inform_hide(this,"Holy_Frenzy")'/>
+        <area shape="rect" coords="63,523,117,577"    onmouseover='inform_show(this,"Uniformity")' onmouseout='inform_hide(this,"Uniformity")'/>
+        <area shape="rect" coords="123,523,177,577"    onmouseover='inform_show(this,"Art_Of_The_Crow")' onmouseout='inform_hide(this,"Art_Of_The_Crow")'/>
+        <area shape="rect" coords="183,523,237,577"    onmouseover='inform_show(this,"Faction_Ruler")' onmouseout='inform_hide(this,"Faction_Ruler")'/>
+        <area shape="rect" coords="243,523,297,577"    onmouseover='inform_show(this,"Mad_Mask")' onmouseout='inform_hide(this,"Mad_Mask")'/>
+        <area shape="rect" coords="303,523,357,577"    onmouseover='inform_show(this,"Future_Linkin")' onmouseout='inform_hide(this,"Future_Linkin")'/>
+        <area shape="rect" coords="363,523,417,577"    onmouseover='inform_show(this,"GodS_Finger")' onmouseout='inform_hide(this,"GodS_Finger")'/>
+        <area shape="rect" coords="3,583,57,637"    onmouseover='inform_show(this,"True_Harlequin")' onmouseout='inform_hide(this,"True_Harlequin")'/>
+
+
+
+    </map>
+    <script src="lib3/jQuery.js"></script>
+    <script >
+        $(document).ready(function get_X(){
+            $(document).mousemove(function(event){ 
+                $("#page_x").text(event.pageX+55)
+
+            });
+        });
+
+        $(document).ready(function get_Y(){
+            $(document).mousemove(function(event){ 
+                $("#page_y").text(event.pageY-100)
+            });
+        });
+
+
+
+        // function inform(x,y)
+        // {
+        // var obj = $('#'+y)
+        // if (obj.is(":hidden"))
+        //     {
+        //         obj.show();   //如果元素为隐藏,则将它显现
+        //     }
+        // else
+        //     {
+        //         obj.hide();     //如果元素为显现,则将其隐藏
+        //     }
+        // }
+        function inform_show(x,y)
+        {
+
+        var obj = $('#'+y);
+        var left= $("#page_x").text() + 'px';
+        var top=  $("#page_y").text() + 'px';
+        if (obj.is(":hidden"))
+            {
+                obj.css({'top':top,'left':left});
+                obj.show();
+            }
+        }
+
+        function inform_hide(x,y)
+        {
+        var obj = $('#'+y);
+            obj.hide();  
+        }
+    </script>
+
+
+
+    <style>
+        .info {
+            background-color:black;
+            color:white;
+            /* margin:100px; */
+            padding:20px;
+            /* float:right; */
+            position:absolute;
+            width:40%;
+            border-radius: 6.18%;
+            border: 2px outset rgb(204,232,207) ;
+            font-family: "微软雅黑"
+        }	
+        .photo{
+            float:left;
+            width:40%
+        }
+
+        .note{
+            background-color:black;
+            color:white;
+            margin:100px;
+            padding:20px;
+            float:right;
+            width:40%;
+            border-radius: 6.18%;
+            font-family: "微软雅黑"
+        }
+
+        .blank{
+            position: absolute;
+            opacity:0
+        }
+
+        .container
+        {
+            margin-left: 50px;
+        }
+        .attention
+        {
+            color:red;
+            font-size:20px;
+        }
+    </style>
+
+
+    <style>
+        /* unvisited link */
+        a:link {
+        color: white;
+        }
+        
+        /* visited link */
+        a:visited {
+        color: white;
+        }
+        
+        /* mouse over link */
+        a:hover {
+        color: white;
+        }
+        
+        /* selected link */
+        a:active {
+        color: white;
+        }
+        </style>
+
+</body>
+</html>
