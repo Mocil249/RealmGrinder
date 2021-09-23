@@ -18,25 +18,25 @@
   <div id="navbox">
     <div class="menu">
         <ul>
-            <li >
+            <li class="li_1">
                 <a href="./index.html" one-link-mark="yes">主页</a>
             </li>
-            <li >
+            <li class="li_1">
                 <a href="./Challenge.html" one-link-mark="yes">挑战</a>
             </li>          
-            <li >
+            <li class="li_1">
                 <a href="./SecrectTrophy.html" one-link-mark="yes">隐藏成就</a>
             </li>
-            <li >
+            <li class="li_1">
                 <a href="./Excavation.html" one-link-mark="yes">考古</a>
             </li>
-            <li >
+            <li class="li_1">
                 <a href="./Research.html" one-link-mark="yes">研究</a>
             </li>
-            <li >
+            <li class="li_1">
                 <a href="ExcavationForcast.html" one-link-mark="yes">考古预测</a>
             </li>
-            <li >
+            <li class="li_1">
                 <a href="./TierViewer.html" one-link-mark="yes">Tier查看器</a>
             </li>
         </ul>
@@ -60,7 +60,7 @@
       font-size: 14px;
       overflow: hidden;
   }
-      li {
+      .li_1 {
       
       list-style-type:none;
       display: inline-block;
@@ -114,10 +114,10 @@
     </ul>
 	<ul v-if='timeLine != ""'>
 		技能层数解锁时间线: 
-		<p></p>
-		<li v-for='line in timeLine'>
+		<p>		<li v-for='line in timeLine'>
         {{line}}
-      </li>
+      </li></p>
+
 	</ul>
   </div>
 
