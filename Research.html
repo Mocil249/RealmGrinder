@@ -292,16 +292,374 @@
                 公式：
             </h2>
             <p>
-                (0.75 * x ^ 0.75)%, x是本局游戏魔法产量
+                +(0.75 * x ^ 0.75)%, x是本局游戏魔法产量
             </p>
         </div> 
 
+        <div class="info" id="Channeling" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Channeling
+                指引"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S10
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                天使
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用天使
+                本局拥有2000个Heaven's Domain"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Heaven’s Domain数量提升其余建筑产能（线性，每个Heaven's Domain增加固定比例）
+
+            </p>
+            <h2>
+                公式：110% 每个Heaven's Domain
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="Vacuumancy" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Vacuumancy
+                空灵"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S30
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局拥有4000点魔上限
+
+            </p>
+            <h2>
+                效果：根据本局时间增加魔上限和回魔
+
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：（魔上限部分+(0.1 * x），回魔部分 +(0.5 * x ^ 0.5） x是游戏时间（秒）
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="Conjuration" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Conjuration
+                咒法"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S50
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                哥布林
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用妖精
+                本局拥有6000魔上限"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                每次施放法术时附加施放免费TC，免费TC施放次数由Goblin Bank数量决定；并且离线施法次数*1.5
+            </p>
+            <h2>
+                公式：floor((x / 600) ^ 0.9),x是你Goblin Bank数量
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="Mysticism" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Mysticism
+                密契主义"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S105
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                各研究分支研究点数总和达到600
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据各研究分支已获得研究点数总和增加回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +floor(x ^ 0.5) x是研究点数
+            </p>
+        </div> 
+
+        <div class="info" id="Augmentation" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Augmentation
+                扩充"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S135
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用妖精
+                本局拥有4000个Enchanted Field"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据魔上限提升Unique Building产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +round(2 * x^0.8)%，x是魔法上限
+            </p>
+        </div> 
+
+        <div class="info" id="Pyromancy" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Pyromancy
+                火卜术"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S150
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                D10+A105都解锁了
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据回魔提升建筑层级最高的两个建筑产能
+
+            </p>
+            <h2>
+                公式：+(8 * x ^ 0.8)%，x是回魔数
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="Empowered_Luck" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Empowered Luck
+                幸运之力"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S175
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                精灵
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                D1+S135都解锁了
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                每触发1次Elven Luck，所有建筑在20秒内产能提升36,000%；Elven Luck触发率+24%。
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                所有建筑产能+36,000%，触发率+24%。
+            </p>
+        </div> 
+
+        
 
 
 
 
 
 
+
+
+
+
+
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
 
 
 
@@ -332,13 +690,13 @@
 
 
             <area shape="rect" coords="86,2,126,42"    onmouseover='inform_show(this,"Enchanting")' onmouseout='inform_hide(this,"Enchanting")'/>
-            <area shape="rect" coords="128,2,168,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="170,2,210,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="212,2,252,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="254,2,294,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="296,2,336,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="338,2,378,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="380,2,420,42"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
+            <area shape="rect" coords="128,2,168,42"    onmouseover='inform_show(this,"Channeling")' onmouseout='inform_hide(this,"Channeling")'/>
+            <area shape="rect" coords="170,2,210,42"    onmouseover='inform_show(this,"Vacuumancy")' onmouseout='inform_hide(this,"Vacuumancy")'/>
+            <area shape="rect" coords="212,2,252,42"    onmouseover='inform_show(this,"Conjuration")' onmouseout='inform_hide(this,"Conjuration")'/>
+            <area shape="rect" coords="254,2,294,42"    onmouseover='inform_show(this,"Mysticism")' onmouseout='inform_hide(this,"Mysticism")'/>
+            <area shape="rect" coords="296,2,336,42"    onmouseover='inform_show(this,"Augmentation")' onmouseout='inform_hide(this,"Augmentation")'/>
+            <area shape="rect" coords="338,2,378,42"    onmouseover='inform_show(this,"Pyromancy")' onmouseout='inform_hide(this,"Pyromancy")'/>
+            <area shape="rect" coords="380,2,420,42"    onmouseover='inform_show(this,"Empowered_Luck")' onmouseout='inform_hide(this,"Empowered_Luck")'/>
             
             <area shape="rect" coords="86,44,126,84"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
             <area shape="rect" coords="128,44,168,84"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
