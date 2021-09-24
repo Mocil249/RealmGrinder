@@ -915,7 +915,7 @@
                 解锁条件：
             </h2>
             <p>
-                本局点击500，000次
+                本局点击 500,000 次
 
             </p>
             <h2>
@@ -967,7 +967,806 @@
                 效果：
             </h2>
             <p>
-                Lightning Strike持续时间不再受任何延长/缩短法术持续时间加成影响；Lightning Strike活跃时，根据本局Lightning Strike活跃时间提升非该法术目标建筑产能
+                Lightning Strike持续时间不再受任何延长/缩短法术持续时间加成影响；</p>
+                <p>Lightning Strike活跃时，根据本局Lightning Strike活跃时间提升非该法术目标建筑产能。
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (250 * (x / 20) ^ 0.9)%, x是Lighting Strike活跃时间
+            </p>
+        </div> 
+
+
+
+
+
+
+
+        <div class="info" id="Mesmerization" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Mesmerization
+                催眠"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S305
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+               通用
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                无面者使用时间达到2天（所有R合计）
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据未计入Ascension产能惩罚(pre-Ascension)时的离线产能加成提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (2.5 * log10(1 + x) ^ 2.5)%，x是未计入Ascension产能惩罚时的离线产能加成
+            </p>
+        </div> 
+
+        <div class="info" id="Reverberation" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Reverberation
+                回响"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S330
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                S200+D225都解锁了
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                至少3个法术活跃时，根据当前活跃法术数量（包括法术层级，数量上限为300）提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (3000 * 2 ^ (x - 3))%, x是当前活跃魔法数量
+            </p>
+        </div> 
+
+        <div class="info" id="Illusion" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Illusion
+                幻象"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S375
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                无面者
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                S330+S305
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                Brainwave活跃时，根据本次施放Brainwave活跃时间（分钟）和Brainwave起步时间（headstart，分钟）增加助手
+
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +(floor(1.15 * (x + y) ^ 2), x是Brainwave活跃时间，y Brainwave起步时间（headstart）
+            </p>
+        </div> 
+
+        <div class="info" id="Capacity" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Capacity
+                容量"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S400
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                S215+W275
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内单局施法次数最大值增加魔上限
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (1.2 * log10(x) ^ 4.8),x是本R内单局施法次数最大值
+            </p>
+        </div> 
+
+        <div class="info" id="Spellbinding" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Spellbinding
+                诱惑"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S435
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                卓尔
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局Combo Strike活跃时间达到4小时
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                离线时Call To Arms加成效果持续生效
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Focus
+                聚焦"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S460
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局施放25000次法术
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局所有种族法术施法次数总和提升所有建筑产能
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+                (15 * x ^ 0.8)%，x是本局所有种族法术施法次数总和
+            </p>
+        </div> 
+
+        <div class="info" id="Heirlooms" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Heirlooms
+                传家宝"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S500
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用邪恶阵营+卓尔
+                拥有40个遗物"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据已获得遗物数量提升魔上限和回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                <p><b>魔法上限提升值</b>: +(75 * x ^ 1.1), x是遗物（artifaft）持有数量</p>
+                <p><b>回魔提升值</b>: +(5 * x ^ 1.05),x是遗物持有数量</p>
+            
+            </p>
+        </div> 
+
+        <div class="info" id="Hierarchy" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Hierarchy
+                阵列"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S545
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                卓尔
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局魔产量达到1e7
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局魔产量和各建筑自身建筑层级提升各自产能，层级越低加成越高
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.1 * x ^ 0.45 * (12 - T) ^ 2)%, x是本局游戏魔法产量 、 T 是建筑层级（tier）
+            </p>
+        </div> 
+
+
+        <div class="info" id="Trickery" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Trickery
+                欺诈术"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S590
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                妖精+矮人
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                <p>使用妖精+矮人</p>
+                <p>本局拥有200个矮人RE</p>
+                <p>S105+S375"</p>
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前魔上限提升中立阵营建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.5 * x ^ 0.95)%, x是魔法上限
+            </p>
+        </div> 
+
+        <div class="info" id="Sequence" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Sequence
+                阵列"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                S1275
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局施放60,000次法术
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                降低法术层级提高时的施法成本上涨倍率
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
 
             </p>
         </div> 
@@ -1290,6 +2089,44 @@
             </p>
         </div> 
 
+        <div class="info" id="" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
 
         <div class="info" id="" style="display:none">
             <h2>
@@ -1329,6 +2166,10 @@
 
             </p>
         </div> 
+
+
+
+
 
 
 
@@ -1376,16 +2217,16 @@
             <area shape="rect" coords="338,44,378,84"    onmouseover='inform_show(this,"Runecarving")' onmouseout='inform_hide(this,"Runecarving")'/>            
             <area shape="rect" coords="380,44,420,84"    onmouseover='inform_show(this,"Chain_Lightning")' onmouseout='inform_hide(this,"Chain_Lightning")'/>
 
-            <area shape="rect" coords="2,86,42,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="44,86,84,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="86,86,126,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="128,86,168,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="170,86,210,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="212,86,252,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="254,86,294,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="296,86,336,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="338,86,378,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords="380,86,420,126"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
+            <area shape="rect" coords="2,86,42,126"    onmouseover='inform_show(this,"Mesmerization")' onmouseout='inform_hide(this,"Mesmerization")'/>
+            <area shape="rect" coords="44,86,84,126"    onmouseover='inform_show(this,"Reverberation")' onmouseout='inform_hide(this,"Reverberation")'/>
+            <area shape="rect" coords="86,86,126,126"    onmouseover='inform_show(this,"Illusion")' onmouseout='inform_hide(this,"Illusion")'/>
+            <area shape="rect" coords="128,86,168,126"    onmouseover='inform_show(this,"Capacity")' onmouseout='inform_hide(this,"Capacity")'/>
+            <area shape="rect" coords="170,86,210,126"    onmouseover='inform_show(this,"Spellbinding")' onmouseout='inform_hide(this,"Spellbinding")'/>
+            <area shape="rect" coords="212,86,252,126"    onmouseover='inform_show(this,"Spellbinding")' onmouseout='inform_hide(this,"Spellbinding")'/>
+            <area shape="rect" coords="254,86,294,126"    onmouseover='inform_show(this,"Heirlooms")' onmouseout='inform_hide(this,"Heirlooms")'/>
+            <area shape="rect" coords="296,86,336,126"    onmouseover='inform_show(this,"Hierarchy")' onmouseout='inform_hide(this,"Hierarchy")'/>
+            <area shape="rect" coords="338,86,378,126"    onmouseover='inform_show(this,"Trickery")' onmouseout='inform_hide(this,"Trickery")'/>
+            <area shape="rect" coords="380,86,420,126"    onmouseover='inform_show(this,"Sequence")' onmouseout='inform_hide(this,"Sequence")'/>
 
             <area shape="rect" coords="2,128,42,168"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
             <area shape="rect" coords="44,128,84,168"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
