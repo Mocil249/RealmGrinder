@@ -1621,60 +1621,67 @@
                 解锁条件：
             </h2>
             <p>
-                R175+<br>
-                Forgotten Relic, Mana Loom 遗物及其升级
+                R175+, Forgotten Relic, Mana Loom 遗物和升级.
             </p>
             <h2>
                 效果：
             </h2>
             <p>
-                根据你最少法术活跃时间的技能提升最大魔法值
+                根据本局魔产量提升受到至少3种法术影响的建筑产能
+
             </p>
             <h2>
                 公式：
             </h2>
             <p>
-                <p><b>加性：</b>: +(1000 + 80 * x ^ 0.8), x是法术活跃时间</p>
-                <p><b>乘性</b>: (6 + 0.6 * x ^ 0.6), x是法术活跃时间.</p>
+                (1.75 * ln(1 + x) ^ 1.75)%，x是本局魔产量
+
             </p>
         </div> 
 
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Invocation" style="display:none">
             <h2>
                 研究名:
             </h2>
             <p>
-
+                "Invocation
+                祈祷"
+                
             </p>
             <h2>
                 研究代号：
             </h2>
             <p>
+                S5375
 
             </p>
             <h2>
                 绑定种族/阵营：
             </h2>
             <p>
-                
+                混乱
+
             </p>
             <h2>
                 解锁条件：
             </h2>
             <p>
-
+                R177+<br>
+                Forgotten Relic, Mana Loom 遗物及其升级
             </p>
             <h2>
                 效果：
             </h2>
             <p>
+                根据本R单个法术活跃时间最小值提升魔上限
 
             </p>
             <h2>
                 公式：
             </h2>
             <p>
-
+                <p><b>加性：</b>: +(1000 + 80 * x ^ 0.8), x是本R单个法术活跃时间最小值</p>
+                <p><b>乘性</b>: (6 + 0.6 * x ^ 0.6), x是本R单个法术活跃时间最小值</p>
             </p>
         </div> 
 
@@ -2257,7 +2264,7 @@
             <area shape="rect" coords="86,128,126,168"    onmouseover='inform_show(this,"Scholarship")' onmouseout='inform_hide(this,"Scholarship")'/>
             <area shape="rect" coords="128,128,168,168"    onmouseover='inform_show(this,"Manipulation")' onmouseout='inform_hide(this,"Manipulation")'/>
             <area shape="rect" coords="170,128,210,168"    onmouseover='inform_show(this,"Spilling")' onmouseout='inform_hide(this,"Spilling")'/>
-            <area shape="rect" coords="212,128,252,168"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
+            <area shape="rect" coords="212,128,252,168"    onmouseover='inform_show(this,"Invocation")' onmouseout='inform_hide(this,"Invocation")'/>
             <area shape="rect" coords="254,128,294,168"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
             <area shape="rect" coords="296,128,336,168"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
             <area shape="rect" coords="338,128,378,168"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
