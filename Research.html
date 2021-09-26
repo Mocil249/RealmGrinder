@@ -142,6 +142,8 @@
                 <p>
                     还在施工（在搞了在搞了.jpg)
                 </p>
+                floor:向下取整<br>
+                round:四舍五入<br>
             </div>  
 
 
@@ -3835,6 +3837,1763 @@
 
 
 
+        <div class="info" id="Blessing" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Blessing
+                祈福"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D1
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                天使
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                买下D分支第1个研究点数
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内至少1个法术活跃的时间段提升Heaven's Domain产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (8 * x ^ 0.8)%,x是本R内至少1个法术活跃的时间
+            </p>
+        </div> 
+        
+        <div class="info" id="Inflame" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Inflame
+                怒火"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D10
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                恶魔
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局拥有2000个Infernal Realm
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Infernal Realm数量提升其余建筑产能（线性，每个Infernal Realm提升固定比例）
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +110% 每个Infernal Realm
+            </p>
+        </div> 
+                
+        <div class="info" id="Cursing" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Cursing
+                诅咒"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D25
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                不死族
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用不死族
+                本局离线时间达到8小时"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据离线产能加成提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (2.75 * log10(1 + x) ^ 2.75)%,x是离线产能加成
+            </p>
+        </div> 
+                
+        <div class="info" id="Hallowing" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Hallowing
+                神圣化"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D50
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                精灵
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用天使
+                本局拥有15000个善良阵营建筑"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Training Ground数量提升fc获得率
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(1.5 * x ^ 1.05)%,x是Training Ground数量
+            </p>
+        </div> 
+                
+        <div class="info" id="Transfixion" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Transfixion
+                贯通"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D55
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局魔产量达到3e6
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局施法次数提升点击收益
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (3 * x ^ 0.7)%,x是本局施法次数
+            </p>
+        </div> 
+                
+        <div class="info" id="Illumination" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Illumination
+                启示"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D135
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用天使
+                本局回魔达到250/秒"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前gem数量提升回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(1.25 * ln(1 + x)) / 10),x是当前gem数量
+            </p>
+        </div> 
+                
+        <div class="info" id="Retribution" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Retribution
+                报应"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D150
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                W120+D55
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据各研究分支研究点数总和提升fc获得率
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(x ^ 1.25), x是各研究分支研究点数总和
+            </p>
+        </div> 
+                
+        <div class="info" id="Resurrection" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Resurrection
+                复兴"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D175
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                天使
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                D1+A55
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内God's Hand活跃时间增加助手数量
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(1.5 * x ^ 0.75), x是本R内God's Hand活跃时间
+            </p>
+        </div> 
+                
+
+
+
+
+
+
+        <div class="info" id="Transcendence" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Transcendence
+                超凡"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D200
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                D175+D135
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                所有法术施法成本-20%，持续时间+20%
+
+            </p>
+        </div> 
+        
+        <div class="info" id="Communion" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Communion
+                圣餐仪式"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D205
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                善良
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "本R施放777次Holy Light
+                C175+D135"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                Holy Light持续时间+300秒
+
+            </p>
+        </div> 
+                
+        <div class="info" id="Weather_Control" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Weather Control
+                气象控制"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D225
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                妖精
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                C25+S30
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据魔上限提升Enchanted Field的产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(2.25 * x ^ 0.8)%, x是魔上限
+            </p>
+        </div> 
+                
+        <div class="info" id="Sanctification" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Sanctification
+                成圣
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D245
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "本R施放500次Spiritual Surge
+                A175+S225"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据非UB建筑数量提升UB产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (2.5 * x ^ 0.55), x是非UB建筑数量
+            </p>
+        </div> 
+                
+        <div class="info" id="Demonology" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Demonology
+                鬼神学"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D250
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                D200+S150
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局内fc获得量增加助手数量
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(ln(1 + x) ^ 1.5), 本局内fc获得量
+            </p>
+        </div> 
+                
+        <div class="info" id="Mutation" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Mutation
+                突变"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D260
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                无面者
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用无面者
+                本局拥有3000个Sunken City"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Sunken City数量提升其余建筑产能（线性，每个Sunken City提升固定比例）
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +95% 每个Sunken City
+            </p>
+        </div> 
+                
+        <div class="info" id="Meditation" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Meditation
+                冥想"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D275
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                德鲁伊
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用德鲁伊
+                本局拥有10000魔上限"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据魔上限提升回魔，离线施法次数结算值*4
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.35 * x ^0.35 + 0.035 * log(x) ^3.5),x是魔上限
+            </p>
+        </div> 
+                
+        <div class="info" id="Transubstantiation" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Transubstantiation
+                化质"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D290
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                拥有遗物Rough Stone
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据拥有遗物数量提升魔上限
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                <p><b>加性</b>: (50 * x ^1.1),x是拥有遗物数量</p>
+                <p><b>乘性</b>: (x ^ 0.95), x是拥有遗物数量</p>
+            </p>
+        </div> 
+
+
+                
+        <div class="info" id="Deliverance" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Deliverance
+                解脱"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D320
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局回魔达到350/秒
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据回魔提升助手产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (20 * x ^ 0.8)%,x是每秒回魔
+            </p>
+        </div> 
+                
+        <div class="info" id="Eternity" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Eternity
+                永恒"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D330
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                E275+D320
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                所有种族法术持续时间*2
+
+            </p>
+        </div> 
+                
+        <div class="info" id="Descent" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Descent
+                降临"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D350
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                泰坦
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                W250+W330
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Olympian Hall数量增加助手数量
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                floor(x ^ 0.5)%, x是Olympian Hall数量
+            </p>
+        </div> 
+                
+        <div class="info" id="Miracle" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Miracle
+                神迹"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D400
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                D205+D290
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                每2分钟随机选择1个建筑按固定比例提升其产能，离线时所有建筑产能提升固定比例（低于前者）
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                在线*200倍，离线*75倍
+            </p>
+        </div> 
+                
+        <div class="info" id="Devotion" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Devotion
+                忠诚"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D435
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                矮人
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局Diamond Pickaxe活跃时间达到4小时
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局施法次数提升善良阵营建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (1.5 * x ^ 0.85)%, x是本局施法次数
+            </p>
+        </div> 
+                
+        <div class="info" id="Mercy" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Mercy
+                仁慈"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D480
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本R内善良、邪恶、中立3个阵营各使用至少12小时
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内善良、中立、邪恶三阵营使用时间最大值与最小值提升所有建筑产能，两值差距越小加成越高
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (100000 * (tmin / tmax) ^ 1.5)%,tmin为最小值,tmax为最大值
+            </p>
+        </div> 
+                
+        <div class="info" id="Purity" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Purity
+                纯洁"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D525
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                善良
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "本R善良阵营使用时间达到36小时
+                D205+D435"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局内所有种族法术施法次数总和提升Holy Light加成效果
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (300 * x ^ 0.3)%, x是本局内所有种族法术施法次数
+            </p>
+        </div> 
+                
+        <div class="info" id="Ritualism" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Ritualism
+                仪礼主义"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D560
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用卓尔
+                S225+S500"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据已获得成就数量提升回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (floor(0.5 * x) / 10),x是已获得成就数量
+            </p>
+        </div> 
+                
+        <div class="info" id="Dispelling" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Dispelling
+                驱魔"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D590
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                天使+矮人
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用天使+矮人，
+                本局拥有200个矮人RE
+                ，W320+A480"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前回魔提升UB产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (5 x ^ 0.95)%,x是每秒回魔
+            </p>
+        </div> 
+                
+        <div class="info" id="Oblation" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Oblation
+                献祭"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D1125
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                龙族
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用中立阵营+龙族
+                ，本局买下Wyrm's Den"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前fc获得率提升Wyrm's Den产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                1.55*x^0.55,x是当前fc获得率
+            </p>
+        </div> 
+
+                
+        <div class="info" id="Solemnity" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Solemnity
+                庄严"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D1275
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局建筑总数达到80000
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据各建筑自身数量提升各自产能（线性，每个建筑提升固定比例）
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +0.3% 每个建筑
+            </p>
+        </div> 
+                
+        <div class="info" id="Soulrending" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                “Soulrending 灵魂撕裂”
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D1375
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                善良阵营使用时间达到7天（所有R合计）
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                Spiritual Surge计算Ascension次数时该次数结算值+50%
+
+            </p>
+
+        </div> 
+                
+        <div class="info" id="Intervention" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Intervention
+                干涉"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D2775
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                佣兵
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                解锁佣兵研究使用权
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据所有R合计佣兵使用时间提升UB产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (10 * x ^ 0.7)%,x是所有R合计佣兵使用时间
+            </p>
+        </div> 
+                
+        <div class="info" id="Vampirism" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Vampirism
+                吸血鬼"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D3350
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "本局离线产能加成达到1e26%
+                D2775+W3150"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前离线产能加成提升助手数量
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                <p><b>加性</b>: (3.25 * log10(1 + x) ^ 2.25), x是当前离线产能</p>
+                <p><b>乘性</b>: (0.05 * log10(1 + x) ^ 2), x是当前离线产能</p>
+            </p>
+        </div> 
+                
+        <div class="info" id="Selection" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Selection
+                抉择"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D5125
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R175+, Forgotten Relic, Mythos 文物和升级.
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局点击次数提升所有UB产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (x ^ 0.5),x是本局点击次数
+            </p>
+        </div> 
+                
+        <div class="info" id="Zealotry" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Zealotry
+                狂热"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D5375
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                善良
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R177+, Forgotten Relic, Mythos 文物和升级.
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前拥有RE数量提升回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.75 * x ^ 0.75), x是当前拥有RE数量
+            </p>
+        </div> 
+                
+        <div class="info" id="Prophecy" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Prophecy
+                预言"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D5625
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R179+, Forgotten Relic, Mythos 文物和升级.
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R所有种族使用时间最小值提升当前所用种族对应set、高级遗产效果以及当前所用Lineage等级
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (50 + 0.25 * x ^ 0.5)%, x是本R所有种族使用时间最小值
+            </p>
+        </div> 
+                
+        <div class="info" id="Birthright" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Birthright
+                继承"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D5875
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R181+, Forgotten Relic, Mythos 文物和升级.
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                给予与当前使用种族完全对立的种族的血统效果
+
+            </p>
+        </div> 
+                
+        <div class="info" id="Scriptures" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Scriptures
+                圣典"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D10875
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R221+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R各法术对应阵营/种族使用时间延长各自持续时间，Call To Arms和Spiritual Surge根据本R时间计算该加成
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.7 * x ^ 0.7)%, x是本R各法术对应阵营/种族使用时间
+            </p>
+        </div> 
+                
+        <div class="info" id="Viriditas" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Viriditas
+                绿愈之力"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D11125
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R223+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据拥有遗物数量提升lineage等级结算值
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (x ^ 0.75)%, x是拥有遗物数量
+            </p>
+        </div> 
+
+
+                
+        <div class="info" id="Rigor" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Rigor
+                清规戒律"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D11375
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R225+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                R次数结算值*2
+
+            </p>
+        </div> 
+                
+        <div class="info" id="Compassion" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Compassion
+                怜悯"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D11625
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R227+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内单个阵营使用时间最小值提升非UB建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (50 + x ^ 0.75)%,x是本R内单个阵营使用时间最小值
+            </p>
+        </div> 
+                
+        <div class="info" id="Virtues" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Virtues
+                美德"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D11875
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R229+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内Mountain Palace数量最大值提升Tax Collection作用时间范围
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (2.5 * x ^ 0.5)%, x是本R内Mountain Palace数量最大值
+            </p>
+        </div> 
+                
+        <div class="info" id="Enochian" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Enochian
+                以诺基语（天使语）"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                D12250
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                R232+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内God's Hand活跃时间提升天使fc获得量
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                *(10 + 0.7 * x ^ 0.7)%,x是本R内God's Hand活跃时间
+            </p>
+        </div> 
+
+
+
 
 
 
@@ -4028,6 +5787,65 @@
             <area shape="rect" coords="44,380,84,420"    onmouseover='inform_show(this,"Motus_Perpetuum")' onmouseout='inform_hide(this,"Motus_Perpetuum")'/>
             <area shape="rect" coords="86,380,126,420"    onmouseover='inform_show(this,"Plating")' onmouseout='inform_hide(this,"Plating")'/>
             <area shape="rect" coords="128,380,168,420"    onmouseover='inform_show(this,"Compression")' onmouseout='inform_hide(this,"Compression")'/>
+        
+        
+
+
+
+            <area shape="rect" coords="86,422,126,462"    onmouseover='inform_show(this,"Blessing")' onmouseout='inform_hide(this,"Blessing")'/>
+            <area shape="rect" coords="128,422,168,462"    onmouseover='inform_show(this,"Inflame")' onmouseout='inform_hide(this,"Inflame")'/>
+            <area shape="rect" coords="170,422,210,462"    onmouseover='inform_show(this,"Cursing")' onmouseout='inform_hide(this,"Cursing")'/>
+            <area shape="rect" coords="212,422,252,462"    onmouseover='inform_show(this,"Hallowing")' onmouseout='inform_hide(this,"Hallowing")'/>
+            <area shape="rect" coords="254,422,294,462"    onmouseover='inform_show(this,"Transfixion")' onmouseout='inform_hide(this,"Transfixion")'/>
+            <area shape="rect" coords="296,422,336,462"    onmouseover='inform_show(this,"Illumination")' onmouseout='inform_hide(this,"Illumination")'/>
+            <area shape="rect" coords="338,422,378,462"    onmouseover='inform_show(this,"Retribution")' onmouseout='inform_hide(this,"Retribution")'/>
+            <area shape="rect" coords="380,422,420,462"    onmouseover='inform_show(this,"Resurrection")' onmouseout='inform_hide(this,"Resurrection")'/>
+
+            <area shape="rect" coords="86,464,126,504"    onmouseover='inform_show(this,"Transcendence")' onmouseout='inform_hide(this,"Transcendence")'/>
+            <area shape="rect" coords="128,464,168,504"    onmouseover='inform_show(this,"Communion")' onmouseout='inform_hide(this,"Communion")'/>
+            <area shape="rect" coords="170,464,210,504"    onmouseover='inform_show(this,"Weather_Control")' onmouseout='inform_hide(this,"Weather_Control")'/>
+            <area shape="rect" coords="212,464,252,504"    onmouseover='inform_show(this,"Sanctification")' onmouseout='inform_hide(this,"Sanctification")'/>
+            <area shape="rect" coords="254,464,294,504"    onmouseover='inform_show(this,"Demonology")' onmouseout='inform_hide(this,"Demonology")'/>
+            <area shape="rect" coords="296,464,336,504"    onmouseover='inform_show(this,"Mutation")' onmouseout='inform_hide(this,"Mutation")'/>
+            <area shape="rect" coords="338,464,378,504"    onmouseover='inform_show(this,"Meditation")' onmouseout='inform_hide(this,"Meditation")'/>
+            <area shape="rect" coords="380,464,420,504"    onmouseover='inform_show(this,"Transubstantiation")' onmouseout='inform_hide(this,"Transubstantiation")'/>
+
+            <area shape="rect" coords="2,506,42,546"    onmouseover='inform_show(this,"Deliverance")' onmouseout='inform_hide(this,"Deliverance")'/>
+            <area shape="rect" coords="44,506,84,546"    onmouseover='inform_show(this,"Eternity")' onmouseout='inform_hide(this,"Eternity")'/>
+            <area shape="rect" coords="86,506,126,546"    onmouseover='inform_show(this,"Descent")' onmouseout='inform_hide(this,"Descent")'/>
+            <area shape="rect" coords="128,506,168,546"    onmouseover='inform_show(this,"Miracle")' onmouseout='inform_hide(this,"Miracle")'/>
+            <area shape="rect" coords="170,506,210,546"    onmouseover='inform_show(this,"Devotion")' onmouseout='inform_hide(this,"Devotion")'/>
+            <area shape="rect" coords="212,506,252,546"    onmouseover='inform_show(this,"Mercy")' onmouseout='inform_hide(this,"Mercy")'/>
+            <area shape="rect" coords="254,506,294,546"    onmouseover='inform_show(this,"Purity")' onmouseout='inform_hide(this,"Purity")'/>
+            <area shape="rect" coords="296,506,336,546"    onmouseover='inform_show(this,"Ritualism")' onmouseout='inform_hide(this,"Ritualism")'/>
+            <area shape="rect" coords="338,506,378,546"    onmouseover='inform_show(this,"Dispelling")' onmouseout='inform_hide(this,"Dispelling")'/>
+            <area shape="rect" coords="380,506,420,546"    onmouseover='inform_show(this,"Oblation")' onmouseout='inform_hide(this,"Oblation")'/>
+
+            <area shape="rect" coords="2,548,42,588"    onmouseover='inform_show(this,"Solemnity")' onmouseout='inform_hide(this,"Solemnity")'/>
+            <area shape="rect" coords="44,548,84,588"    onmouseover='inform_show(this,"Soulrending")' onmouseout='inform_hide(this,"Soulrending")'/>
+            <area shape="rect" coords="86,548,126,588"    onmouseover='inform_show(this,"Intervention")' onmouseout='inform_hide(this,"Intervention")'/>
+            <area shape="rect" coords="128,548,168,588"    onmouseover='inform_show(this,"Vampirism")' onmouseout='inform_hide(this,"Vampirism")'/>
+            <area shape="rect" coords="170,548,210,588"    onmouseover='inform_show(this,"Selection")' onmouseout='inform_hide(this,"Selection")'/>
+            <area shape="rect" coords="212,548,252,588"    onmouseover='inform_show(this,"Zealotry")' onmouseout='inform_hide(this,"Zealotry")'/>
+            <area shape="rect" coords="254,548,294,588"    onmouseover='inform_show(this,"Prophecy")' onmouseout='inform_hide(this,"Prophecy")'/>
+            <area shape="rect" coords="296,548,336,588"    onmouseover='inform_show(this,"Birthright")' onmouseout='inform_hide(this,"Birthright")'/>
+            <area shape="rect" coords="338,548,378,588"    onmouseover='inform_show(this,"Scriptures")' onmouseout='inform_hide(this,"Scriptures")'/>
+            <area shape="rect" coords="380,548,420,588"    onmouseover='inform_show(this,"Viriditas")' onmouseout='inform_hide(this,"Viriditas")'/>
+
+            <area shape="rect" coords="2,590,42,630"    onmouseover='inform_show(this,"Rigor")' onmouseout='inform_hide(this,"Rigor")'/>
+            <area shape="rect" coords="44,590,84,630"    onmouseover='inform_show(this,"Compassion")' onmouseout='inform_hide(this,"Compassion")'/>
+            <area shape="rect" coords="86,590,126,630"    onmouseover='inform_show(this,"Virtues")' onmouseout='inform_hide(this,"Virtues")'/>
+            <area shape="rect" coords="128,590,168,630"    onmouseover='inform_show(this,"Enochian")' onmouseout='inform_hide(this,"Enochian")'/>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
         </map>
 
 
