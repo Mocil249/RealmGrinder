@@ -5593,7 +5593,868 @@
         </div> 
 
 
-        <div class="info" id="" style="display:none">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="info" id="Coinage" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Coinage
+                货币制度"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E1
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                哥布林
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                买下E分支第1个研究点数
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前建筑总数提升Goblin Bank产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.85 * x ^ 0.85)%,x是当前建筑总数
+            </p>
+        </div> 
+
+        <div class="info" id="Recycling" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Recycling
+                回收"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E10
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                不死族
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局拥有2000个Undercity
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Undercity数量提升其余建筑产能（线性，每个Undercity提升固定比例）
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +95% 每个Undercity
+            </p>
+        </div> 
+
+        <div class="info" id="Commerce" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Commerce
+                贸易"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E25
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                精灵
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局获得1e8个fc
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前拥有RE数量增加助手数量
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +(floor((1 + 6 * x) ^ 0.5 - 1)),x是当前拥有RE数量
+            </p>
+        </div> 
+
+        <div class="info" id="Diplomacy" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Diplomacy
+                外交策略"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E30
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局拥有1000个RE
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本局时间（分钟）提升RE产能加成和fc获得率
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                <p><b>fc获得率</b>: +(floor(1.5 * (x / 60) ^ 1.05))%, x是本局时间（分钟）</p>
+                <p><b>RE产能加成</b>: +(floor((x / 60) ^ 0.6))%, x是本局时间（分钟）</p>
+            </p>
+        </div> 
+
+        <div class="info" id="Bartering" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Bartering
+                以物易物"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E50
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                妖精
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                使用哥布林<br>
+                本局拥有1000个RE
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                降低Enchanted Field价格上涨倍率，倍率-0.02。如果没有其他的下降，那么就从1.15减到1.13
+
+            </p>
+        </div> 
+
+        <div class="info" id="Common_Business" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Common Business
+                公共事业"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E80
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本局拥有9000个中立阵营建筑
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据中立阵营建筑数量提升善良/邪恶阵营建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (round((1.75 * x) ^ 0.8))%, x是中立阵营建筑数量
+            </p>
+        </div> 
+
+        <div class="info" id="Bribing" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Bribing
+                贿赂"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E135
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                使用哥布林<br>
+                本局拥有28000个建筑
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                降低UB价格上涨倍率
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                倍率-0.01。如果没有其他的下降，那么就从1.15减到1.14
+            </p>
+        </div> 
+
+        <div class="info" id="Royal_Demand" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Royal Demand
+                王室需求"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E145
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                本R施放50000次Tax Collection <br>
+                C10+C105
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                TC作用时间范围增加30秒
+
+            </p>
+        </div> 
+
+
+
+
+        <div class="info" id="Investment" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Investment
+                投资"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E150
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                E135+E25
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前拥有钱币数量提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (round(ln(1 + x) ^ 1.25))%, x是当前拥有钱币数量
+            </p>
+        </div> 
+
+        <div class="info" id="Acquisition" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Acquisition
+                并购"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E200
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+               通用 
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                E150+E80
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据已解锁成就数量占所有成就数量的百分比提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (round(0.0003 * (100 * x) ^ 3.35))%, x是已解锁成就数量占所有成就数量的百分比 (奖杯解锁数/将被总数)
+            </p>
+        </div> 
+
+        <div class="info" id="Forgery" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Forgery
+                伪造"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E225
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                哥布林
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                E1+A50
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据Goblin Bank数量提升邪恶阵营建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (1.5 * x ^ 0.85)%,x是Goblin Bank数量
+            </p>
+        </div> 
+
+        <div class="info" id="Coercion" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Coercion
+                胁迫"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E230
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                恶魔
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                W50+E30
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据本R内邪恶阵营使用时间增加已获得成就数量结算值
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (0.25 * x ^ 0.5)%, x是本R内邪恶阵营使用时间
+            </p>
+        </div> 
+
+        <div class="info" id="Trade_Routes" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Trade Routes
+                商路"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E250
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                E225+E145
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前拥有RE数量增加回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +(floor(10 * x ^ 0.55) / 10),x是当前拥有RE数量
+            </p>
+        </div> 
+
+        <div class="info" id="Sifting" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Sifting
+                筛选"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E260
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                德鲁伊
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用德鲁伊<br>
+                本局拥有3000个Stonehenge Circle"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据当前Stonehenge Circle数量增加其余建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (100 * x)%,x是当前Stonehenge Circle数量
+            </p>
+        </div> 
+
+        <div class="info" id="Offering" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Offering
+                供给"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E275
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                泰坦
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用泰坦<br>
+                本局拥有1250个RE"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据RE产能加成增加回魔
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +(x ^ 0.95), x是RE产能加成
+            </p>
+        </div> 
+
+        <div class="info" id="Surveyorship" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Surveyorship
+                测量"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E290
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                拥有7个遗物
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                降低考古价格上涨倍率
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                倍率-0.02，如果上涨倍率没有其他下降效果，那么其就从1.2下降到1.18
+            </p>
+        </div> 
+
+
+
+        <div class="info" id="Smuggling" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Smuggling
+                走私"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E320
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                abdication后的gem数量至少是abdication前的2倍
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据UB数量提升fc获得率，FC获得率*2
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                +(5 * x ^ 0.9)%,x是UB数量
+            </p>
+        </div> 
+        <div class="info" id="Collection" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Collection
+                收藏"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E330
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                通用
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                E200+E225
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据已获得遗物数量提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                round(50 * x ^ 1.1)%,x是已获得遗物数量
+            </p>
+        </div> 
+        <div class="info" id="Repurpose" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+                "Repurpose
+                再利用"
+                
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+                E350
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                无面者
+
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+                "使用无面者<br>
+                C200+A330"
+                
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+                根据R次数提升所有建筑产能
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+                (round(2.5 * x ^ 2.25))%,x是R次数
+            </p>
+        </div> 
+        <div class="info" id="Conversion" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -5631,8 +6492,7 @@
 
             </p>
         </div> 
-
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Marketing" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -5670,8 +6530,7 @@
 
             </p>
         </div> 
-
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Inflation" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -5709,8 +6568,7 @@
 
             </p>
         </div> 
-
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Undercutting" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -5748,8 +6606,7 @@
 
             </p>
         </div> 
-
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Jewellery" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -5787,8 +6644,7 @@
 
             </p>
         </div> 
-
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Slavery" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -5826,1129 +6682,7 @@
 
             </p>
         </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-
-
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-
-
-
-
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
-            <h2>
-                研究名:
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                研究代号：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                绑定种族/阵营：
-            </h2>
-            <p>
-                
-            </p>
-            <h2>
-                解锁条件：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                效果：
-            </h2>
-            <p>
-
-            </p>
-            <h2>
-                公式：
-            </h2>
-            <p>
-
-            </p>
-        </div> 
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Hoarding" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -6988,7 +6722,9 @@
         </div> 
 
 
-        <div class="info" id="" style="display:none">
+
+
+        <div class="info" id="Intimidation" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -7026,7 +6762,7 @@
 
             </p>
         </div> 
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Rarity" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -7064,7 +6800,7 @@
 
             </p>
         </div> 
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Hirelings" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -7102,7 +6838,389 @@
 
             </p>
         </div> 
-        <div class="info" id="" style="display:none">
+        <div class="info" id="Estates" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Decentralization" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Whipround" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Loan_Sharking" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Prosperity" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Rigmarole" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Grey_Friday" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+
+
+        <div class="info" id="Heist" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Surplus" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Overworking" style="display:none">
+            <h2>
+                研究名:
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                研究代号：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                绑定种族/阵营：
+            </h2>
+            <p>
+                
+            </p>
+            <h2>
+                解锁条件：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                效果：
+            </h2>
+            <p>
+
+            </p>
+            <h2>
+                公式：
+            </h2>
+            <p>
+
+            </p>
+        </div> 
+        <div class="info" id="Oilery" style="display:none">
             <h2>
                 研究名:
             </h2>
@@ -7406,32 +7524,32 @@
             <area shape="rect" coords="338,674,378,714"    onmouseover='inform_show(this,"Offering")' onmouseout='inform_hide(this,"Offering")'/>
             <area shape="rect" coords="380,674,420,714"    onmouseover='inform_show(this,"Surveyorship")' onmouseout='inform_hide(this,"Surveyorship")'/>
 
-            <area shape="rect" coords="Smuggling"    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
+            <area shape="rect" coords="2,716,42,756"    onmouseover='inform_show(this,"Smuggling")' onmouseout='inform_hide(this,"Smuggling")'/>
+            <area shape="rect" coords="44,716,84,756"    onmouseover='inform_show(this,"Collection")' onmouseout='inform_hide(this,"Collection")'/>
+            <area shape="rect" coords="86,716,126,756"    onmouseover='inform_show(this,"Repurpose")' onmouseout='inform_hide(this,"Repurpose")'/>
+            <area shape="rect" coords="128,716,168,756"    onmouseover='inform_show(this,"Conversion")' onmouseout='inform_hide(this,"Conversion")'/>
+            <area shape="rect" coords="170,716,210,756"    onmouseover='inform_show(this,"Marketing")' onmouseout='inform_hide(this,"Marketing")'/>
+            <area shape="rect" coords="212,716,252,756"    onmouseover='inform_show(this,"Inflation")' onmouseout='inform_hide(this,"Inflation")'/>
+            <area shape="rect" coords="254,716,294,756"    onmouseover='inform_show(this,"Undercutting")' onmouseout='inform_hide(this,"Undercutting")'/>
+            <area shape="rect" coords="296,716,336,756"    onmouseover='inform_show(this,"Jewellery")' onmouseout='inform_hide(this,"Jewellery")'/>
+            <area shape="rect" coords="338,716,378,756"    onmouseover='inform_show(this,"Slavery")' onmouseout='inform_hide(this,"Slavery")'/>
+            <area shape="rect" coords="380,716,420,756"    onmouseover='inform_show(this,"Hoarding")' onmouseout='inform_hide(this,"Hoarding")'/>
 
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
+            <area shape="rect" coords="2,758,42,798"    onmouseover='inform_show(this,"Intimidation")' onmouseout='inform_hide(this,"Intimidation")'/>
+            <area shape="rect" coords="44,758,84,798"    onmouseover='inform_show(this,"Rarity")' onmouseout='inform_hide(this,"Rarity")'/>
+            <area shape="rect" coords="86,758,126,798"    onmouseover='inform_show(this,"Hirelings")' onmouseout='inform_hide(this,"Hirelings")'/>
+            <area shape="rect" coords="128,758,168,798"    onmouseover='inform_show(this,"Estates")' onmouseout='inform_hide(this,"Estates")'/>
+            <area shape="rect" coords="170,758,210,798"    onmouseover='inform_show(this,"Decentralization")' onmouseout='inform_hide(this,"Decentralization")'/>
+            <area shape="rect" coords="212,758,252,798"    onmouseover='inform_show(this,"Whipround")' onmouseout='inform_hide(this,"Whipround")'/>
+            <area shape="rect" coords="254,758,294,798"    onmouseover='inform_show(this,"Loan_Sharking")' onmouseout='inform_hide(this,"Loan_Sharking")'/>
+            <area shape="rect" coords="296,758,336,798"    onmouseover='inform_show(this,"Prosperity")' onmouseout='inform_hide(this,"Prosperity")'/>
+            <area shape="rect" coords="338,758,378,798"    onmouseover='inform_show(this,"Rigmarole")' onmouseout='inform_hide(this,"Rigmarole")'/>
+            <area shape="rect" coords="380,758,420,798"    onmouseover='inform_show(this,"Grey_Friday")' onmouseout='inform_hide(this,"Grey_Friday")'/>
         
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
-            <area shape="rect" coords=""    onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/>
+            <area shape="rect" coords="2,800,42,840"    onmouseover='inform_show(this,"Heist")' onmouseout='inform_hide(this,"Heist")'/>
+            <area shape="rect" coords="44,800,84,840"    onmouseover='inform_show(this,"Surplus")' onmouseout='inform_hide(this,"Surplus")'/>
+            <area shape="rect" coords="86,800,126,840"    onmouseover='inform_show(this,"Overworking")' onmouseout='inform_hide(this,"Overworking")'/>
+            <area shape="rect" coords="128,800,168,840"    onmouseover='inform_show(this,"Oilery")' onmouseout='inform_hide(this,"Oilery")'/>
         
         
         
