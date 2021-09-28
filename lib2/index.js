@@ -23,12 +23,12 @@
       return '找到 ' + ev[1].name;
     }
     else if (ev[0] == 'improve') {
-      return '能找到 ' + ev[2].name + ' (于 ' + ev[2].display(ev[1]) + ')';
+      return '能找到 ' + ev[2].name + ' (条件是： ' + ev[2].display(ev[1]) + ')';
     }
   }
 
   function renderExcav(ex) {
-    var msg = '挖掘 ' + ex[0] + ' (' + ex[1] + ' 次): ';
+    var msg = '挖掘到 ' + ex[0] + ' (' + ex[1] + ' 次): ';
     var evs = [];
     for (var i = 2; i < ex.length; i++) {
       evs.push(renderEvent(ex[i]));
@@ -67,7 +67,7 @@
       }
 	  View.raw.sv = "";
 	  $('.artifactviewer').show();
-	  $('.viewer-results').empty().html("Click on a value above to see available artifact requirements for that value.");
+	  $('.viewer-results').empty().html("点击图上的点可以看到当前可以获得的文物的条件");
 	  $('#override-reincarnation').val(this.save.reincarnation);
 
     }
@@ -214,7 +214,7 @@
           datasets: [{
             label: 'Value',
             data: this.small_values,
-            pointBackgroundColor: 'rgba(91, 110, 225, 0.7)',
+            pointBackgroundColor: 'rgba(255, 0, 0, 0.7)',
             pointStrokeColor: 'rgba(63, 63, 116, 1)'
           }]
         },
@@ -222,7 +222,7 @@
           showLines: false,
           title: {
             display: true,
-            text: 'Small RNG Values',
+            text: 'RNG小值总览',
             fontSize: 16
           },
           legend: {
@@ -234,17 +234,15 @@
               position: 'bottom',
               scaleLabel: {
                 display: true,
-                labelString: 'Number of RNG Values Ahead',
-                fontSize: 14,
-                fontStyle: 'bold'
+                labelString: '随机数序号',
+                fontSize: 15,
               }
             }],
             yAxes: [{
               scaleLabel: {
                 display: true,
-                labelString: 'RNG Value',
-                fontSize: 14,
-                fontStyle: 'bold'
+                labelString: '随机数值',
+                fontSize: 15,
               }
             }]
           },
@@ -260,12 +258,12 @@
 	this.viewArtifacts = function() {
 		if (View.raw.sv) {
 			var svs,i,reinc;
-			$(".viewer-results").empty().html("<b>Excavations:</b>  " + (View.raw.eligible.length > 0 ? Math.ceil(View.raw.sv.x / View.raw.eligible.length) + " (If current number of eligible artifacts does not change)":"Unable to move small values due to 0 eligible artifacts")
+			$(".viewer-results").empty().html("<b>考古数:</b>  " + (View.raw.eligible.length > 0 ? Math.ceil(View.raw.sv.x / View.raw.eligible.length) + " (If current number of eligible artifacts does not change)":"Unable to move small values due to 0 eligible artifacts")
 			+ "<br><b>Values:</b>  " + View.raw.sv.x + " values ahead " + " with <b>Small Value:</b> " + View.raw.sv.y);
 			if (View.raw.unowned.length) {
 				$(".viewer-results").append("<br><br><table><tbody>");
 				svs = View.raw.eligible.length > 1 ? "<th> Small Value Shifts Required <a>(?)</a></th>" : "";
-				$(".viewer-results tbody").append("<tr><th> Artifact </th><th> Requirement </th>" + svs);
+				$(".viewer-results tbody").append("<tr><th> 文物 </th><th> 解锁要求 </th>" + svs);
 				View.raw.eligible.length > 1 && $(".viewer-results th a").popover({
 					trigger: "hover",
 					html: true,

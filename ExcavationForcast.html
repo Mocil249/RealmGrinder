@@ -25,7 +25,7 @@
     考古预测
 </title>
 <link rel="icon" href="./imgages/icon_32.png" sizes="32x32">
-<body>
+<body style="background-color: #98AFC7;">
 
 
     <div id="navbox">
@@ -108,7 +108,7 @@
         <div class='panel panel-primary'>
             <div class='panel-heading'>{{flavor.intro}}</div>
             <div class='panel-body input-group panelSaveInput'>
-                <label id='saveInputLabel' class='input-group-addon' for='saveInput'>Save <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='Export your save from Realm Grinder and paste it in this field to view a variety of stats that are not shown in-game.'>(?)</a></label>
+                <label id='saveInputLabel' class='input-group-addon' for='saveInput'>输入存档 <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='Export your save from Realm Grinder and paste it in this field to view a variety of stats that are not shown in-game.'>(?)</a></label>
                 <input id='saveInput' class='form-control' type='text' name='saveInput' value=''>
                 <div class='input-group-btn'>
                     <button id='doReEnter' class='btn btn-success' type='button'>重新计算预测数据</button>
@@ -122,7 +122,7 @@
                 <a href='#tab-artifact' aria-controls='Artifact Forecast' role='tab' data-toggle='pill'> 考古预测 </a>
             </li>
             <li role='presentation'>
-                <a href='#tab-raw' aria-controls='Small Values' role='tab' data-toggle='pill'> Small Values </a>
+                <a href='#tab-raw' aria-controls='Small Values' role='tab' data-toggle='pill'> 小值 </a>
             </li>
         </ul>
         <div class='tab-content'>
@@ -132,13 +132,13 @@
 				</div>
                 <div>
                     <div class='results'>
-                        <div class='resultblock'><span class='result'>Artifact RNG State: </span><span>{{result.state}}</span></div>
-                        <div class='resultblock'><span class='result'>Current Excavations: </span><span>{{result.excavations}}</span></div>
-                        <div class='resultblock'><span class='result'>Eligible Artifacts <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='This is the set of artifacts that will consume a value from the RNG when you excavate. It is possible for some artifacts to be eligible even if you cannot obtain them in your current abdication.'>(?)</a>: </span><span>{{eligible}}</span></div>
-                        <div class='resultblock'><span class='result'>Unobtainable Eligible Artifacts: </span><span>{{unobtain}}</span></div>
-                        <div class='resultblock'><span class='result'>Non-Random Artifacts: </span><span>{{nonrandom}}</span></div>
+                        <div class='resultblock'><span class='result'>文物 RNG 状态: </span><span>{{result.state}}</span></div>
+                        <div class='resultblock'><span class='result'>当前考古挖掘层数: </span><span>{{result.excavations}}</span></div>
+                        <div class='resultblock'><span class='result'>具备条件文物 <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='This is the set of artifacts that will consume a value from the RNG when you excavate. It is possible for some artifacts to be eligible even if you cannot obtain them in your current abdication.'>(?)</a>: </span><span>{{eligible}}</span></div>
+                        <div class='resultblock'><span class='result'>具备条件但无法挖到的文物: </span><span>{{unobtain}}</span></div>
+                        <div class='resultblock'><span class='result'>非随机文物: </span><span>{{nonrandom}}</span></div>
                         <br>
-                        <div class='resultblock'><span class='result'>Upcoming Excavations: </span>
+                        <div class='resultblock'><span class='result'>即将得到的文物: </span>
                             <ul>
                                 <li v-for="excav in excavs" , track-by="$index">{{excav}}</li>
                             </ul>
@@ -148,7 +148,7 @@
             </div>
             <div role='tabpanel' class='tab-pane fade in' id='tab-raw'>
                 <canvas id='chartcontainer' height='100'></canvas>
-                <div hidden class='artifactviewer viewertitle'> <span class='result'>Artifact Requirements</span>
+                <div hidden class='artifactviewer viewertitle'> <span class='result'>文物解锁要求：</span>
                     <div class='artifactviewer viewer-results'> </div>
                     <br>
                     <input type="checkbox" id="override-box" value="1"> Override Save Reincarnation
