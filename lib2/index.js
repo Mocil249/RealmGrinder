@@ -258,12 +258,12 @@
 	this.viewArtifacts = function() {
 		if (View.raw.sv) {
 			var svs,i,reinc;
-			$(".viewer-results").empty().html("<b>考古数:</b>  " + (View.raw.eligible.length > 0 ? Math.ceil(View.raw.sv.x / View.raw.eligible.length) + " (If current number of eligible artifacts does not change)":"Unable to move small values due to 0 eligible artifacts")
-			+ "<br><b>Values:</b>  " + View.raw.sv.x + " values ahead " + " with <b>Small Value:</b> " + View.raw.sv.y);
+			$(".viewer-results").empty().html("<b>考古数:<br></b>  " + (View.raw.eligible.length > 0 ? Math.ceil(View.raw.sv.x / View.raw.eligible.length) + " (If current number of eligible artifacts does not change)":"Unable to move small values due to 0 eligible artifacts")
+			+ "<br><b>  <td> </td><td> </td><td></td>Values:</b><br>  " + View.raw.sv.x + "   <td> </td><td> </td><td> </td>values ahead " + "   with <b>  <td> </td><td> </td><br>Small Value:</b> " + View.raw.sv.y);
 			if (View.raw.unowned.length) {
-				$(".viewer-results").append("<br><br><table><tbody>");
+				$(".viewer-results").append("<br><br><table ><tbody><br>");
 				svs = View.raw.eligible.length > 1 ? "<th> Small Value Shifts Required <a>(?)</a></th>" : "";
-				$(".viewer-results tbody").append("<tr><th> 文物 </th><th> 解锁要求 </th>" + svs);
+				$(".viewer-results tbody").append("<tr><th>     文物 </th><th>     解锁要求 </th>" + svs);
 				View.raw.eligible.length > 1 && $(".viewer-results th a").popover({
 					trigger: "hover",
 					html: true,
