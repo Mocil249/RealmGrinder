@@ -158,162 +158,188 @@
 
 
 
-        <div class='foot'  >
-            <a href="https://www.mfwztj.com/" target="_blank" style="font-size:medium" ><img src="https://www.cutercounter.com/hits.php?id=huxkcqcp&nd=8&style=21" ;border="0" alt=""></a>
-        </div>
-    </div>        
+    
+    </div>    
+    
+    <a href="https://www.mfwztj.com/" target="_blank" style="font-size:medium" ><img src="https://www.cutercounter.com/hits.php?id=huxkcqcp&nd=8&style=21" ;border="0" alt=""></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="lib3/jQuery.js"></script>
+    <script >
+        $(document).ready(function get_X(){
+            $(document).mousemove(function(event){ 
+                $("#page_x").text(event.pageX+55)
+    
+            });
+        });
+    
+        $(document).ready(function get_Y(){
+            $(document).mousemove(function(event){ 
+                $("#page_y").text(event.pageY-100)
+            });
+        });
+    
+    
+    
+        // function inform(x,y)
+        // {
+        // var obj = $('#'+y)
+        // if (obj.is(":hidden"))
+        //     {
+        //         obj.show();   //如果元素为隐藏,则将它显现
+        //     }
+        // else
+        //     {
+        //         obj.hide();     //如果元素为显现,则将其隐藏
+        //     }
+        // }
+        function inform_show(x,y)
+        {
+    
+        var obj = $('#'+y);
+        var left= $("#page_x").text() + 'px';
+        var top=  $("#page_y").text() + 'px';
+        if (obj.is(":hidden"))
+            {
+                obj.css({'top':top,'left':left});
+                obj.show();
+            }
+        }
+    
+        function inform_hide(x,y)
+        {
+        var obj = $('#'+y);
+            obj.hide();  
+        }
+    </script>
+    
+    <style>
+        .info {
+            background-color:black;
+            color:white;
+            /* margin:100px; */
+            padding:20px;
+            /* float:right; */
+            position:absolute;
+            width:40%;
+            border-radius: 6.18%;
+            border: 2px outset rgb(204,232,207) ;
+            font-family: "微软雅黑";
+    
+        }	
+        .photo{
+            float:left;
+            width:40%
+        }
+    
+        .note{
+            background-color:black;
+            color:white;
+            margin:100px;
+            padding:20px;
+            float:right;
+            width:40%;
+            border-radius: 6.18%;
+            font-family: "微软雅黑"
+        }
+    
+        .blank{
+            position: absolute;
+            opacity:0
+        }
+    
+        .attention
+        {
+            color:red;
+            font-size:20px;
+        }
+        .foot
+        {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        .main
+        {
+        height:100% ;       
+        padding-bottom:120px;
+    
+        }
+        
+        body{
+        background-color:#98AFC7;
+        position:relative;
+        height: 3000px;;
+        min-height:100%;
+        }
+    </style>
+    
+    
+    
+    
+    <style>
+        a:link {
+        color: white;
+        }
+        
+    
+        a:visited {
+        color: white;
+        }
+    
+        a:hover {
+        color: white;
+        }
+        
+        a:active {
+        color: white;
+        }
+    
+    
+        </style> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <map name="">
+        <!-- <area shape="rect" coords="" href="#"   onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/> -->
+    
+    </map>
+
+
+
+
+
+
+
+
+
+
+
+    
 </body>
 
-<script src="lib3/jQuery.js"></script>
-<script >
-    $(document).ready(function get_X(){
-        $(document).mousemove(function(event){ 
-            $("#page_x").text(event.pageX+55)
 
-        });
-    });
-
-    $(document).ready(function get_Y(){
-        $(document).mousemove(function(event){ 
-            $("#page_y").text(event.pageY-100)
-        });
-    });
-
-
-
-    // function inform(x,y)
-    // {
-    // var obj = $('#'+y)
-    // if (obj.is(":hidden"))
-    //     {
-    //         obj.show();   //如果元素为隐藏,则将它显现
-    //     }
-    // else
-    //     {
-    //         obj.hide();     //如果元素为显现,则将其隐藏
-    //     }
-    // }
-    function inform_show(x,y)
-    {
-
-    var obj = $('#'+y);
-    var left= $("#page_x").text() + 'px';
-    var top=  $("#page_y").text() + 'px';
-    if (obj.is(":hidden"))
-        {
-            obj.css({'top':top,'left':left});
-            obj.show();
-        }
-    }
-
-    function inform_hide(x,y)
-    {
-    var obj = $('#'+y);
-        obj.hide();  
-    }
-</script>
-
-<style>
-    .info {
-        background-color:black;
-        color:white;
-        /* margin:100px; */
-        padding:20px;
-        /* float:right; */
-        position:absolute;
-        width:40%;
-        border-radius: 6.18%;
-        border: 2px outset rgb(204,232,207) ;
-        font-family: "微软雅黑";
-
-    }	
-    .photo{
-        float:left;
-        width:40%
-    }
-
-    .note{
-        background-color:black;
-        color:white;
-        margin:100px;
-        padding:20px;
-        float:right;
-        width:40%;
-        border-radius: 6.18%;
-        font-family: "微软雅黑"
-    }
-
-    .blank{
-        position: absolute;
-        opacity:0
-    }
-
-    .attention
-    {
-        color:red;
-        font-size:20px;
-    }
-    .foot
-    {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
-    .main
-    {
-    height:100% ;       
-    padding-bottom:120px;
-
-    }
-    
-    body{
-    background-color:#98AFC7;
-    position:relative;
-    height: 3000px;;
-    min-height:100%;
-    }
-</style>
-
-
-
-
-<style>
-    a:link {
-    color: white;
-    }
-    
-
-    a:visited {
-    color: white;
-    }
-
-    a:hover {
-    color: white;
-    }
-    
-    a:active {
-    color: white;
-    }
-
-
-    </style> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<map name="">
-    <!-- <area shape="rect" coords="" href="#"   onmouseover='inform_show(this,"")' onmouseout='inform_hide(this,"")'/> -->
-
-</map>
 </html>
