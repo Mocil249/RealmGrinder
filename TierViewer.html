@@ -16,7 +16,7 @@
   <script src='lib/index.js'></script>
 </head>
 <title>
-  技能Tier查看器
+  Skill Tier Viewer
 </title>
 <link rel="icon" href="./imgages/icon_32.png" sizes="32x32">
 <body style="background-color:#98AFC7;">
@@ -25,25 +25,25 @@
     <div class="menu">
         <ul>
             <li class="li_1">
-                <a href="./index.html" one-link-mark="yes">主页</a>
+                <a href="./index.html" one-link-mark="yes">Home</a>
             </li>
             <li class="li_1">
-                <a href="./Challenge.html" one-link-mark="yes">挑战</a>
-            </li>          
-            <li class="li_1">
-                <a href="./SecrectTrophy.html" one-link-mark="yes">隐藏成就</a>
+                <a href="./Challenge.html" one-link-mark="yes">Challenge</a>
             </li>
             <li class="li_1">
-                <a href="./Excavation.html" one-link-mark="yes">考古</a>
+                <a href="./SecrectTrophy.html" one-link-mark="yes">Hidden achievements</a>
             </li>
             <li class="li_1">
-                <a href="./Research.html" one-link-mark="yes">研究</a>
+                <a href="./Excavation.html" one-link-mark="yes">Archaeology</a>
             </li>
             <li class="li_1">
-                <a href="ExcavationForcast.html" one-link-mark="yes">考古预测</a>
+                <a href="./Research.html" one-link-mark="yes">Research</a>
             </li>
             <li class="li_1">
-                <a href="./TierViewer.html" one-link-mark="yes">Tier查看器</a>
+                <a href="ExcavationForcast.html" one-link-mark="yes">Archaeological Forecast</a>
+            </li>
+            <li class="li_1">
+                <a href="./TierViewer.html" one-link-mark="yes">Tier Viewer</a>
             </li>
         </ul>
     </div>
@@ -51,7 +51,7 @@
 
 
 <style>
-  .menu ul li a, .menu ul li a:visited, .menu ul li:hover a 
+  .menu ul li a, .menu ul li a:visited, .menu ul li:hover a
   {
       display: block;
       text-decoration: none;
@@ -96,57 +96,57 @@
 
   
   <div class='container' id='app'>
-    <h2 class='page-header'><span>Tier查看器</span> <small>Your Tiers Are Delicious...</small></h2>
+    <h2 class='page-header'><span>Tier Viewer</span> <small>Your Tiers Are Delicious...</small></h2>
     <div class='panel panel-primary'>
       <div class='panel-body'>
         <div class='input-group panelSaveInput'>
-          <label id='saveInputLabel' class='input-group-addon' for='saveInput'>输入存档 <a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content='从游戏导出存档，粘贴到右边的输入栏里面'>(?)</a></label>
+          <label id='saveInputLabel' class='input-group-addon' for='saveInput'>input archive<a data-toggle='popover' data-trigger='hover' data-placement='bottom' data-content ='Export the archive from the game and paste it into the input field on the right'>(?)</a></label>
           <input id='saveInput' class='form-control' type='text' name='saveInput' value=''>
           <div class='input-group-btn'>
-            <button id='doReEnter' class='btn btn-success' type='button'>重新计算</button>
-            <button id='doSaveCopy' class='btn btn-info' type='button'>复制存档</button>
-            <button id='doSaveClear' class='btn btn-danger' type='button'>清空存档</button>
+            <button id='doReEnter' class='btn btn-success' type='button'>Recalculate</button>
+            <button id='doSaveCopy' class='btn btn-info' type='button'>Copy save</button>
+            <button id='doSaveClear' class='btn btn-danger' type='button'>Clear save</button>
           </div>
         </div>
       </div>
     </div>
-	<ul v-if='unlockedTiers > -1'>
-		已解锁Tier的总数量: {{unlockedTiers}}
-	</ul>
+<ul v-if='unlockedTiers > -1'>
+Total number of unlocked Tiers: {{unlockedTiers}}
+</ul>
     <ul>
       <li v-for='s in allSpells'>
         {{s.name}}: {{s.unlocked + 1}} ({{s.text}})
       </li>
     </ul>
-	<ul v-if='timeLine != ""'>
-		技能层数解锁时间线: 
-		<p>		<li v-for='line in timeLine'>
+<ul v-if='timeLine != ""'>
+Timeline for unlocking skill layers:
+<p> <li v-for='line in timeLine'>
         {{line}}
       </li></p>
 
-	</ul>
+</ul>
   </div>
 
   <div class="note">
     <div>
-    <p> 原网址：
+    <p> Original URL:
         <a href="https://dox4242.github.io/misc/tiers.html" target="_blank" >https://dox4242.github.io/misc/tiers.html</a>
     </p>
     <p>
-        网站翻译提供的所有内容仅供学习、交流和分享用途，只供参考，请勿用于商业用途，如有侵权请联系作者删除。
+        All content provided by the website translation is for learning, communication and sharing purposes only, for reference only, please do not use it for commercial purposes, if there is any infringement, please contact the author to delete it.
     </p>
-    </div> 
+    </div>
 
   <style>
     .note{
     background-color:black;
     color:white;
-    /* margin:100px; */
+    /* margin: 100px; */
     position:relative;
     left:500px;
     padding:20px;
     width:40%;
-    font-family: "微软雅黑"
+    font-family: "Microsoft Yahei"
 }
 </style>
 </body>
